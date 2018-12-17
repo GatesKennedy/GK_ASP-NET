@@ -57,13 +57,14 @@ namespace GK_CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Email,BorthDate,CarYear,CarMake,CarModeL,DUI,Tickets,Coverage,Quote")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Email,BorthDate,CarYear,CarMake,CarModeL,DUI,Tickets,Coverage")] Insuree insuree)
         {
-            ViewData["Email"] = "Timothy@AjaClark.com";
+            //ViewData["Email"] = "Timothy@AjaClark.com";
             if (ModelState.IsValid)
             {
 
-                //CalculateQuote();
+               insuree.Quote = CalculateQuote(insuree);
+
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
