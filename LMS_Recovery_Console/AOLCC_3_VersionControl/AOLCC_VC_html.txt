@@ -1,0 +1,2688 @@
+
+ 
+  <Learning Objectives - Transition List>
+
+ 
+
+ 
+ ^GREEN^<strong>MODULE 1. An Introduction to Version Control</strong>
+
+ 
+ ^GREEN^Learning objectives: 
+
+ 
+ ^GREEN^Describe basic version control terms
+
+ 
+ ^GREEN^Explain what version control systems are
+
+ 
+ ^GREEN^Differentiate Git and GitHub
+
+ 
+
+ 
+ ^GREEN^SUBMODULE A. Course Overview
+
+ 
+
+ 
+ ^GREEN^ESTIMATED COURSE COMPLETION TIME:
+
+ 
+ 24 hours of study
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ INSTRUCTIONS:
+
+ 
+ Tech Academy courses are designed on an increasing gradient of difficulty, with easier concepts placed toward the beginning and advanced concepts at the end. Later steps assume the student has completed all prior steps. Courses sometimes refer back to earlier content. The courses must be done in sequence, with each step fully completed before moving on to the next. Please do not skip around on courses.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+ ^GREEN^PURPOSE OF THIS COURSE:
+
+ 
+
+ 
+ Keeping track of the various stages of a software program as it is created is vital, if only so that if you find that you’re taking the wrong approach to a programming task, you will want a way to get rid of the changes you made by reverting to an earlier version so you can go back to before you tried that approach. Version control allows this, as well as other valuable actions related to managing the sometimes lengthy and complex process of making software.
+
+ 
+
+ 
+ The purpose of this course is to teach students the basics of version control. It is a vital tool for software developers, particularly when they’re involved in a coding project that includes multiple developers. The ability to utilize version control is a skill that every developer must have and you will obtain that skill on this course.
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ: 
+
+ 
+ Which one of the following points is not an attribute of version control?
+
+ 
+ Keep track of the various stages of software development
+
+ 
+ Get rid of changes made to software and revert to an earlier version
+
+ 
+ Upload code to a server CORRECT
+
+ 
+ Manage code with multiple developers
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+ Source code: The set of computer instructions that make up a computer program, in such a form that a computer programmer can modify the instructions.
+
+ 
+ Source code is the version of a computer program as it is originally written (i.e., typed into a computer in a programming language) by the designer of the program. Normally, when the programmer is done making the program, he has the computer convert the code he wrote the program in (the “source code”) to another format that is easier and faster for the computer to use. In that new format, the program can't be easily understood by people – but it is very useful to the computer. It also can't be modified by other developers at that point.
+
+ 
+ EXAMPLE: Open-source software means developers can access and customize the source code of the software. 
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+ Version Control: Also called source control or revision control. Version control is the tools and processes that are used to manage multiple versions of computer files as the files change over time.
+
+ 
+ A version control system, or VCS, provides two primary data management capabilities. It allows users to 1) lock files so they can only be edited by one person at a time, and 2) track changes to files.
+
+ 
+ When you create things using your computer you often revise them over time. This can mean the creation of documents, graphic images, computer programs and other items. Keeping track of the changes to these items over time is called “version control." It also includes the control of changes to items like this when more than one person can make changes to the items. 
+
+ 
+ A version is an exact snapshot of something at a specific point in time. If you wrote a song, that would be Version 1. If you later added bagpipes over the top of the song, that would be Version 2. Version control is managing different versions of things on a computer. This is used a lot when you are creating computer programs. 
+
+ 
+ EXAMPLE: If a team of writers were preparing a large textbook, and each writer could add, edit and remove content to the textbook at any time, they would find a version control system valuable to keep track of all changes as the textbook was written.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+ ^GREEN^SUBMODULE B. An Introduction to Git and GitHub
+
+ 
+
+ 
+ Git: A specific example of version control. Git is a popular version control system. You can use Git to manage the versions of your computer programs and work on programs in conjunction with other developers.
+
+ 
+ Git is itself a computer program. A computer programmer can install the Git program on their computers, and then use that program while creating software and websites.
+
+ 
+ EXAMPLE: Git is free software, and is used by millions of computer programmers around the world.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ GitHub: GitHub is a popular web site owned by Microsoft. It can be used to store source code, accomplish version control on that source code, track defects in that source code and manage work tasks for the computer programmers working on that source code. 
+
+ 
+ EXAMPLE: As of 2018, GitHub was the largest host of source code in the world. 
+
+ 
+  <Gapfill>
+
+ 
+
+ 
+ QUIZ: 
+
+ 
+ “Source control,” “revision control” and “version control” do not mean the same thing.
+
+ 
+ True 
+
+ 
+ False CORRECT
+
+ 
+
+ 
+ 2) What does “VCS” stand for?
+
+ 
+ Visual Computer Software 
+
+ 
+ Video Communication Systems
+
+ 
+ Version Control System CORRECT
+
+ 
+ Version of Conveyance Software
+
+ 
+
+ 
+ 3) Which one of the following terms best fill the blank?: ___ be used to store source code, accomplish version control on that source code, track defects in that source code and manage work tasks for the computer programmers working on that source code. 
+
+ 
+
+ 
+ GitHub CORRECT
+
+ 
+ Git
+
+ 
+ Source code
+
+ 
+ Database
+
+ 
+
+ 
+  <Template-blank & Video>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE C. Welcome to the Course
+
+ 
+
+ 
+ Watch this video in full:
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/612bb07c-1b36-4a3d-8824-f8c0862a6909/Introduction%20to%20The%20Version%20Control%20Course.mp4 !!! <u>Welcome to the Course!</u>
+
+ 
+
+ 
+  <Gapfill>
+
+ 
+
+ 
+ Which one of the following terms best filled the blank?: _____ is tools and software that are used to monitor and manage the various versions of electronic files, as they’re being worked on.
+
+ 
+
+ 
+ Registry
+
+ 
+ Version control CORRECT
+
+ 
+ SQL
+
+ 
+ Command line
+
+ 
+
+ 
+    <Template-blank>
+
+ 
+
+ 
+ Software suite: A collection of computer programs that typically perform similar functions. These computer programs usually share a similar user interface.
+
+ 
+  
+
+ 
+ EXAMPLE: One of the most popular software suites is Microsoft Office 365. It includes several programs, including Word and Excel.  
+
+ 
+
+ 
+   <Template-blank>
+
+ 
+
+ 
+ Repository: A main location where data can be kept and handled.
+
+ 
+  
+
+ 
+ A repository is the central location where code for a particular program is stored.
+
+ 
+  
+
+ 
+ EXAMPLE: There are online repositories to store one’s code.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Project: An undertaking that typically has exact requirements and specifications. Projects are usually created following a plan.
+
+ 
+  
+
+ 
+ Within code editors (programs that developers use to write their code) websites and programs are typically saved as projects.
+
+ 
+  
+
+ 
+ EXAMPLE: If you were creating a portfolio website to showcase your accomplishments as a developer, the code for this site would be referred to as, and saved as, a project.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ Branch: A duplication of code or a portion of it, so that changes can be made to it without affecting the original code.
+
+ 
+  
+
+ 
+ The purpose of branching is to allow a developer to edit a copy of the code without affecting the original code. Typically the developer later “merges” the branch – which means they integrate their edited code back into the original code.
+
+ 
+  
+
+ 
+ This is as opposed to simply editing the original version of the code.
+
+ 
+  
+
+ 
+ One of the benefits of branching is that it allows one to explore a different approach to solving a computing problem through writing code, while not stopping development work on the original code.
+
+ 
+  
+
+ 
+ EXAMPLE: If a developer wanted to explore an alternate method for sorting a large collection of financial records, they could create a branch of the original code and work on that alternative sorting approach while they, or other developers, continued to do other work on the original code. Then, when they had perfected the new approach to sorting the data, they could merge the changes they made back into the original code, which now had additional functions due to the continued work on that original code.
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+   
+
+ 
+ 1)      GitHub has repositories.
+
+ 
+ a.       True CORRECT
+
+ 
+ b.       False
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE D. A Primer to Version Control Systems
+
+ 
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+  
+
+ 
+ On this course you will learn about various Version Control Systems (VCSs).
+
+ 
+  
+
+ 
+ A VCS is a specialized software suite that is used to maintain and track multiple versions of project files, also known as "source control" or "revision control.”
+
+ 
+  
+
+ 
+ VCSs consists of a repository where all of the project files are stored. This repository may be stored on the user’s hard drive. Whenever this is so, these files are considered to be on a “LOCAL” repository. The original project files that are stored on another server’s hard drive (such as online storage) so that others can also access the files are considered to be on a “REMOTE” repository.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+  
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+  
+
+ 
+ While a team of developers are working on a project together, it is important that no two team members are editing the same content at the same time. If this happens, it is possible for one person to accidentally overwrite the changes made by someone else. For this reason, version control allows users to "check out" files for editing.
+
+ 
+  
+
+ 
+ When a file has been checked out from a shared file server, it cannot be edited by other users. When the developer finishes editing the file, he can save the changes and "check in" the file, effectively releasing that file so that other team members can edit the file once more.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+  
+
+ 
+ A typical business scenario for a team of developers working together on a particular project would be for the main project files, known as “MASTER” repository files to be cloned (copied) to a developer’s local hard drive so that they may work with these files whether they are connected to the remote hard drive or not. Before a developer will make any changes to their copied files, they typically will make a new “BRANCH” of all the copied files in the local repository.
+
+ 
+  
+
+ 
+ This creates all new versions of the original copied repository files. Essentially, these may be thought of as new instances of the files. Developers make new branches of the project files so that any new changes are not actually affecting the original state of these files on the original branch. The original branch containing the original master file is referred to as the “Master Branch” while any additional branches are considered, “Sub Branches”.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+  
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+  
+
+ 
+ After the developer has created a sub-branch which is named uniquely from the master branch to ensure differentially, the files may be altered and improved. In a version control system, each file in the local repository will have an associated file history attached to it. This history is updated with a short description and timestamp each and every time the file undergoes changes in which the developer has committed these changes to their local repository. If the developer feels there are mistakes in a particular file, they may pick a save point on the file’s history timeline and revert this file back to the condition as it was at that exact moment of time.
+
+ 
+  
+
+ 
+  <Template-blank>
+
+ 
+  
+
+ 
+ A file on one particular branch may be modified and thus it will contain different data than that very same file on another branch since they are no longer on the same plane of reality. Think about those popular science fiction novels or films concerning time travel. The time traveler may have gone back to a special point in time and made an alteration but the new future is not the previous future to the time traveler anymore as there was a new branch in time generated as soon as the time traveler had made their alteration in the timeline. Every successive change they may make will also make new branches in their reality accordingly.
+
+ 
+  
+
+ 
+ Luckily for developers, the VCS software will remember each and every change for them and associate a brief but concise description, explaining each change made so that all the developer has to do is read through these brief descriptions to help them determine the point in time they would like to revert the file back to.
+
+ 
+
+ 
+  <Template-Quiz>
+
+ 
+
+ 
+ QUIZ:  
+
+ 
+ 1.       What is the difference between “local” and “remote” repositories? Local and remote repositories
+
+ 
+ “Remote” refers to files stored on your hard drive, whereas “local” refers to files stored elsewhere.
+
+ 
+ b. “Local” refers to files stored on your hard drive, whereas “remote” refers to files stored elsewhere.
+
+ 
+   
+
+ 
+ 2) Which one of the following terms properly fills the blank?: “Before a developer will make any changes to their copied files, they typically will make a new _____ of all the copied files in the local repository. This creates all new versions of the original copied repository files. Essentially, these may be thought of as new instances of the files. Developers make new _____es of the project files so that any new changes are not actually affecting the original state of these files on the original branch.
+
+ 
+ a. Branch CORRECT
+
+ 
+ b. Source code
+
+ 
+ c. Instantiation
+
+ 
+ d. Repository
+
+ 
+  
+
+ 
+ 3) Which one of the following terms does not mean the same thing as the others?:
+
+ 
+ a.       Version control
+
+ 
+ b.       Source control
+
+ 
+ c.       File control CORRECT
+
+ 
+ d.       Revision control
+
+ 
+
+ 
+  <Learning Objectives - Transition List>
+
+ 
+
+ 
+ ^GREEN^<strong>MODULE 2. </strong>
+
+ 
+ ^GREEN^Learning objectives: 
+
+ 
+ ^GREEN^Describe the uses of version control
+
+ 
+ ^GREEN^Explain the fundamentals of the Linux operating system and its history
+
+ 
+
+ 
+ SUBMODULE A. Basic terminology	 <Template-blank>
+
+ 
+
+ 
+ Merge: Merging is the action of combining various versions of a file or folder.
+
+ 
+
+ 
+ In version control, it means to combine changes in files that exist in two or more different locations (or being handled by two or more developers). It is combining changes in data.
+
+ 
+
+ 
+ EXAMPLE: If a developer wanted to explore an alternate method for sorting a large collection of financial records, they could create a branch (a duplication of code or a portion of it, so that changes can be made to it without affecting the original code) of the original code and work on that alternative sorting approach while they, or other developers, continued to do other work on the original code. Then, when they had perfected the new approach to sorting the data, they could merge the changes they made back into the original code, which now had additional functions due to the continued work on that original code.
+
+ 
+
+ 
+ When the two sets of code do not merge properly, this is referred to as a “merge conflict.” For an example: If you attempt to merge code stored on your laptop with source code elsewhere,  but someone had made changes to the exact section of the code you had been working on, you might have a merge conflict.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ Check in/out: "Checking in" code refers to adding the changes you made to a set of computer code into the code that is being managed by a version control system.
+
+ 
+
+ 
+ Conversely, "checking out" code mean marking a certain part of the code that is being managed by a version control as being subject to modification. That section of code can then be managed by the version control system in such a manner that the system acts to prevent conflicts that could be caused if another person wanted to work on that exact same section of code simultaneously to your work on it.
+
+ 
+
+ 
+ Checking in is sometimes referred to as “committing” code.
+
+ 
+
+ 
+ EXAMPLE: If you were working wit/h a team of two other developers on a computer program that tracked the students in a school, and you wanted to work on the part of the code that calculated grade point averages, you might "check out" that section of code. The version control system would then mark that section of code in some way, and could notify the other two developers that the section of code has been checked out should they attempt to change it.
+
+ 
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Network backbone: A backbone is a part of computer network that interconnects various pieces of network, providing a path for the exchange of information between different subnetworks.
+
+ 
+
+ 
+ This is part of a computer network that connects various sections of the network. It provides a path for information exchange between the various networks integrated into it.
+
+ 
+
+ 
+ It is essentially a "senior" network containing a high capacity connection that forms the main link to various "junior" networks.
+
+ 
+
+ 
+ EXAMPLE: If several offices were connected to a network, the network backbone would be the main link connecting all of the offices. If this connection was a wireless connection, one would say, “Our company uses a wireless network backbone.”
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ Overhead: The cost associated with something.
+
+ 
+
+ 
+ In computers, overheads refers to the amount of work required of the computer to perform an action (such as running certain software). Overhead includes how much bandwidth is utilized, how much processing power is required, the amount of memory is taken up, etc. by a particular website, program, etc.
+
+ 
+
+ 
+ EXAMPLE: In running a business, overhead includes rent cost, marketing expenses and payroll. 
+
+ 
+
+ 
+ Software-wise, Microsoft Word takes more overhead than Notepad. 
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Iteration: To iterate means to say or do something again; to repeat something. An iteration is the act of repeating. Iteration means to go through a defined series of actions, repeating a certain number of times. Usually this defined series of actions is repeated a certain number of times, or until a condition is met.
+
+ 
+
+ 
+ EXAMPLE: Computer programs are usually created in iterations: Coming up with a basic working version, reviewing the program for mistakes to correct and improvements to make, doing that work, and repeating. This can be continued indefinitely.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Shell: A type of program that provides a user interface between the user and the operating system. You can use the shell to locate files, start and stop other programs, etc.
+
+ 
+
+ 
+ Some shells provide a graphical interface, where visual objects on the screen are used to represent the files and programs on the computer. Other shells provide a text-only interface.
+
+ 
+
+ 
+ EXAMPLE: You might use a shell to look at all the files in one section of your computer.
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ: 
+
+ 
+
+ 
+ Checking in code and committing code mean different things.
+
+ 
+
+ 
+ True 
+
+ 
+ False CORRECT
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE B. The Uses of Version Control
+
+ 
+
+ 
+ THE USES OF VERSION CONTROL
+
+ 
+  
+
+ 
+ Sometimes it is beneficial to save different versions of the same document.
+
+ 
+  
+
+ 
+ Anyone familiar with Microsoft Word has probably seen or been involved in document names such as CollegeEssay_1.docx or CollegeEssay_2.docx or Essay15FINALVERSION.docx.
+
+ 
+  
+
+ 
+ When you get into software development, where there may be hundreds or thousands of changes in a software’s lifecycle (the creative process of software from start to finish – planning, development, testing, etc.), this quickly becomes unsustainable.
+
+ 
+             	
+
+ 
+ A Version Control System (VCS) solves this problem, among many others.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+
+ 
+ A VCS doesn’t work by saving complete copies of each new version: it works by saving only the changes. This is useful for getting the latest version of a document, as well as getting any version in the document’s history.
+
+ 
+  
+
+ 
+ Software developers often have the need to revert a program’s code to the “last working version.” Comparing this “working version” to the current “broken” version makes bug-fixing easier.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+
+ 
+ A Version Control System also makes team development possible, even with remote team members. With a centralized “repository” of document changes, developers can easily download the “latest” version and edit it. Once done, they just “check it in” to this main repository for the other team members to view and edit.
+
+ 
+  
+
+ 
+ Of course, having two developers work on the same document can cause problems. Version Control Systems utilize two distinct methods for enabling this type of collaboration. The first solution is to enable a developer to “lock” a file being edited. In other words, while the file is being edited, no other team member can edit it. Others can download it and view it, but none can make changes.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ VERSION CONTROL SYSTEMS
+
+ 
+
+ 
+ The obvious problem with this solution is it slows development. Some programs have one file that is bigger and heavier trafficked than others. To stop production while one developer edits it seems a waste. Also, as has happened, what if the developer forgets to unlock the file or takes a long weekend?
+
+ 
+
+ 
+ This is solved by the copy-modify-merge method. Any number of developers can download a file and edit it. When sending the edited file back to the server, the server checks if the file being sent is “up-to-date” with any changes that were sent before it. If it’s “out-of-date”, the server shows the developer which changes were made and forces the developer to integrate those changes into the current document. Usually developers aren’t working on the same portion of the same document, so these are typically easy to integrate.
+
+ 
+  
+
+ 
+ The VCS known as Git, utilized through the Github interface, follows the copy-modify-merge method and has made it possible for software development to occur amongst hundreds of developers simultaneously. It has opened the door to “open-source software development” projects that have helped revolutionize the world of technology.
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+
+ 
+ Which of the following does version control make copies of?
+
+ 
+ Only the changes that were made CORRECT
+
+ 
+ Complete copies of each version 
+
+ 
+
+ 
+ Which of the following is a version control tool that can ensure multiple developers don’t change the same code?
+
+ 
+ Delete folders in the repository
+
+ 
+ Lock the file being edited CORRECT
+
+ 
+ Saving data
+
+ 
+ Checking in code
+
+ 
+
+ 
+  <Template-Video>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE C. Working with the Linux Operating System
+
+ 
+
+ 
+ Watch this video in full:
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/8ce74c80-1e03-4548-975e-2968ced8a318/linux.mp4 !!! <u>Linux</u>
+
+ 
+
+ 
+  <Module end Quiz>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+ What does GNU stand for?
+
+ 
+ ^GREEN^Git Not Unix
+
+ 
+ ^GREEN^GNU's Not Unix CORRECT
+
+ 
+ ^GREEN^GitHub Not Unix
+
+ 
+ ^GREEN^Graphics Not Unix
+
+ 
+
+ 
+  <Template-Quiz>
+
+ 
+  
+
+ 
+ A NOTE ABOUT THE VIDEOS ON THIS COURSE:
+
+ 
+
+ 
+ On the Computer and Technology Basics Course and Overview of Software Development Course, Erik Gross (Co-Founder of The Tech Academy) acted as the Instructor in most of the videos - covering topics contained in scripts written by Jack Stanley (the other Co-Founder of The Tech Academy) and him.
+
+ 
+
+ 
+ On this course, Daniel Christie is the Instructor in the videos. All of the videos on this course follow scripts written by Jack Stanley and Erik Gross, the authors of The Tech Academy’s curriculum. Daniel is an experienced developer, a graduate of the Software Developer Boot Camp, and a long-time Tech Academy employee. Enjoy!
+
+ 
+
+ 
+  <Learning Objectives - Transition List>
+
+ 
+
+ 
+ ^GREEN^<strong>MODULE 3. </strong>
+
+ 
+ ^GREEN^Learning objectives: 
+
+ 
+ ^GREEN^Explain the fundamentals of version control systems
+
+ 
+ ^GREEN^Describe Git
+
+ 
+ ^GREEN^Install Git
+
+ 
+ ^GREEN^Write basic Git commands 
+
+ 
+
+ 
+ SUBMODULE A. Different Types of Version Control Systems	 <Template-Video>
+
+ 
+
+ 
+ Watch this video in full:
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/5495fc8e-dd91-4eae-ae88-3cd59c21a23d/1_Intro%20to%20VCS.mp4 !!! <u>Version Control Systems Animated</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ What is the difference between a centralized vs distributed VCS?
+
+ 
+ A centralized VCS has one master repository, whereas as a distributed VCS is housed on developers’ local hard drives CORRECT
+
+ 
+ A distributed VCS has one master repository, whereas as a centralized VCS is housed on developers’ local hard drives
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ GIT AND GITHUB
+
+ 
+ Unix is an open-source and extremely popular operating system created in the early 1970s by the technology company AT&T. 
+
+ 
+
+ 
+ GIT is a Unix-based version control system software that uses special commands typed into a command line module. GIT provides the tools necessary for the developer to manage local repository of files on their local hard drive.
+
+ 
+
+ 
+ GitHub is a file repository hosting service that provides tools to share project files with other registered members of the community. GitHub also provides automated solutions to assist with file versions being committed by several users occurring at the same time.
+
+ 
+
+ 
+ The GitHub Desktop Application is a version control system that bridges the gap between the tools already built-in to the GitHub website and provides the user with a visual solution to easily manage their repository files on both their local hard drive and the remote GitHub server.
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ BASH
+
+ 
+
+ 
+ Bash is short for “Bourne Again SHell.”  A command-line user interface for Unix. 
+
+ 
+
+ 
+ A command language is a programming language made up mostly of commands that are mainly used for communicating with operating system of a computer. Bash is a shell and a command language. Users can type commands that cause actions in the bash. 
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ Which one of the following points is a benefit of the GitHub Desktop Application?
+
+ 
+ It is easier to use than Git
+
+ 
+ It installs faster than Git and takes up less storage space on your hard drive
+
+ 
+ It allows users to manage their repository files on both their hard drive and the remote GitHub server CORRECT
+
+ 
+ It is the most robust version control system in existence
+
+ 
+
+ 
+  <Template-video>
+
+ 
+
+ 
+ Watch this video in full:
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/46e208ef-a068-4ad9-b0d3-eadadde9117d/2_Understanding%20VCS%20Concepts.mp4 !!! <u>Understanding VCS Basics</u>
+
+ 
+
+ 
+  <Gapfill>
+
+ 
+
+ 
+ QUIZ: 
+
+ 
+
+ 
+ Which one of the following terms is defined as: “The current state of locally stored project files not yet added to the master repository.”
+
+ 
+ Working set CORRECT
+
+ 
+ Repository
+
+ 
+ Commit
+
+ 
+ Add
+
+ 
+
+ 
+  <Template-Image>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE B. Working with Git
+
+ 
+
+ 
+ TUTORIALS:
+
+ 
+
+ 
+ This course contains many video tutorials. In these tutorials, the Instructor performs various actions on his computer. <i>You are expected to follow along, performing the same actions on your computer</i>.
+
+ 
+
+ 
+ Do not just watch tutorials. Copy what the Instructor is doing on your own screen.
+
+ 
+
+ 
+ For an example: If the Instructor is showing you how to use a Version Control System, you should follow along, duplicating their actions.
+
+ 
+
+ 
+ This is typically done as follows:
+
+ 
+
+ 
+ <img src="cid:Image_0.png" />
+
+ 
+
+ 
+ You don’t have to have an external monitor - this is just an example.
+
+ 
+
+ 
+ You gain skills by <i>doing</i>. A chef masters preparing meals through cooking. A pilot learns to fly an aircraft by flying. As a coder, you will only become skilled through writing code. 
+
+ 
+
+ 
+  <Template-video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/2c6b8846-39de-4de0-ae6c-1d0426a81240/Install%20Git%20for%20Windows.mp4 !!! <u>Installing Git</u>
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE C. Becoming Familiar with Git Terminology
+
+ 
+
+ 
+ Directory: A directory is something (such as a book) which contains listings of information in an organized manner.
+
+ 
+
+ 
+ Technically, a folder and directory are the same thing. The only difference is that folder refers to a visual representation of a directory. Meaning, folders are icons representing a directory in the computer. 
+
+ 
+
+ 
+ EXAMPLE: Your written documents could be stored in one directory while your pictures could be stored in another. 
+
+ 
+
+ 
+ The root directory is the first or top directory in your computer. The root directory for Windows is: C:/Windows
+ <img src="cid:Image_1.png" />
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ OneDrive: A service provided by Microsoft for storing files online. 
+
+ 
+
+ 
+ EXAMPLE: You could back up your hard drive on OneDrive and share the data with other people. 
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ INI file format: “INI” is short for initialization. INI files are used by the Windows operating system, typically to lay out operating instructions for the OS and some programs. 
+
+ 
+
+ 
+ EXAMPLE: Usually the instructions to the computer that enables the use of a mouse are stored .ini files. 
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ .docx file format. “Docx” is short for “document XML.” XML is <i>extensible</i> markup language. This means that developer can create their own document structure, and then use XML to specify markup instructions for the data in those documents. Tags are the markup language words that usually has two parts, a start tag and an end tag. They have these symbols before and after them: < and >.  XML is similar to HTML except that the code itself can be customized (i.e. the developer can create their own tags).
+
+ 
+
+ 
+ The .docx file format is what Microsoft Word documents are typically saved as (previously, Word used .doc). 
+
+ 
+
+ 
+ EXAMPLE: If you attempted to open a .docx file in a program that doesn’t support Word document formats, you would either get an error message or a scrambled document. 
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Touch: A command-line interface program for Unix that is used to update date information - such as: changing the date that a file or directory was modified or accessed. Touch can also be used to create or open a file. 
+
+ 
+
+ 
+ EXAMPLE: You could type “touch dogstory.docx” in the Git command line to create a blank Microsoft Word document entitled “dogstory.”
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Tilde: The ~ symbol. Pronounced “tilda.”
+
+ 
+
+ 
+ EXAMPLE: The tilde is placed over certain letters in some Spanish words as an accent, such as the word: señor.
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ Command-line option: A command-line option or simply option (also known as a flag or switch) modifies the operation of a command; the effect is determined by the command's program. In many CLIs, these options are written by typing a hyphen, followed by the desired option (or switch).
+
+ 
+
+ 
+ EXAMPLE: the command "ls" tells the computer to list the files in the current directory. Adding the switch "-lS" will modify the command so that the list of files is sorted from largest file size to smallest. That command and switch would look like this:
+
+ 
+
+ 
+ ls -lS
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ Folder and directory mean virtually the same thing
+
+ 
+ True CORRECT
+
+ 
+ False
+
+ 
+
+ 
+ What does the .ini extension short for?
+
+ 
+ Initial
+
+ 
+ Initialization CORRECT
+
+ 
+ Initialize
+
+ 
+ Initializing
+
+ 
+
+ 
+ 3) How do you pronounce the symbol “~”?
+
+ 
+ Tilday
+
+ 
+ Tildoe
+
+ 
+ Tilda CORRECT
+
+ 
+ Tildee
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ SUBMODULE D. Getting to Know Git Bash  <Template-blank & Note>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/c83e49ca-cc3c-44cc-a731-d9841962f0f3/Learning%20to%20Use%20Git_pt1.mp4 !!! <u>Working with Git and Bash Part One</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+ Which of the following commands do you type to list a directory?
+
+ 
+ ls CORRECT
+
+ 
+ list_dir
+
+ 
+ ldir
+
+ 
+ ld
+
+ 
+
+ 
+ 2. What does the command “cd” stand when entered in the command line?
+
+ 
+ Compact disk
+
+ 
+ Change directory CORRECT
+
+ 
+ Channel directory
+
+ 
+ Compact directory
+
+ 
+
+ 
+ 3. Which of the following commands creates a new directory?
+
+ 
+ crdir
+
+ 
+ cd
+
+ 
+ md 
+
+ 
+ mkdir CORRECT
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Working directory: Also called “current working directory (CWD),” “current directory” and “working tree.” The directory you are currently working in as a developer. 
+
+ 
+
+ 
+ EXAMPLE: In the following file path, the working directory would be “Docs”:
+
+ 
+ C:\Windows\Docs\Letter.docx
+
+ 
+
+ 
+  <Template-blank & Image>
+
+ 
+
+ 
+ Staging: The step prior to the commit process in Git. A staged file means that you have marked the file to be included in your next commit. Staging is basically a loading dock where you can determine which changes you will commit. You can perform actions in the staging area, such as temporarily storing your changes.
+
+ 
+
+ 
+ EXAMPLE: The following diagram shows the staging area:
+
+ 
+
+ 
+
+ 
+ <img src="cid:Image_2.png" />
+
+ 
+                    <Template-Quiz>
+
+ 
+
+ 
+ 00   <Learning Objectives Transition List>
+
+ 
+
+ 
+ ^GREEN^<strong>MODULE 4. </strong>
+
+ 
+ ^GREEN^Learning objectives: 
+
+ 
+ ^GREEN^Utilize the Git bash
+
+ 
+ ^GREEN^Create branches in Git
+
+ 
+ ^GREEN^Merge branches in Git
+
+ 
+ ^GREEN^Utilize Git Hub
+
+ 
+
+ 
+ SUBMODULE A. Using Git and the Bash  <Template-Image>
+
+ 
+
+ 
+ Tracked file: The files that were last saved. Tracked files are files that Git knows about.
+
+ 
+
+ 
+ Untracked files are everything else — any files in your working directory that were not saved and are not in your staging area. 
+
+ 
+
+ 
+ EXAMPLE: Review the following diagram:
+
+ 
+ <img src="cid:Image_3.png" />
+
+ 
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ Parse: To break something up into its parts and analyze it. In computing, it means that the program code is analyzed and read.
+
+ 
+
+ 
+ EXAMPLE: If you write code for a web site, the web server parses the code and then outputs the correct HTML code to the browser.
+
+ 
+
+ 
+ Parsing can also refer to breaking up ordinary text. For example: Search engines typically parse search phrases entered by users so that they can more accurately search for each word.
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ What is the working directory in the following file path?:
+
+ 
+ C:\Windows\Users\code.txt
+
+ 
+
+ 
+ Windows
+
+ 
+ C:\
+
+ 
+ Code.txt
+
+ 
+ Users CORRECT
+
+ 
+
+ 
+ 2) Which one of the following terms means something different than the rest? 
+
+ 
+ Working directory
+
+ 
+ CWD
+
+ 
+ Current directory
+
+ 
+ Working tree
+
+ 
+ Branch CORRECT
+
+ 
+
+ 
+  <Template-video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/982de5c2-cbe2-449c-b29f-fb55952d4b3d/Learning%20to%20Use%20Git_pt2.mp4 !!! <u>Working with Git and Bash Part Two</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+  
+
+ 
+ What does the “clear” command do?
+
+ 
+ Delete a file
+
+ 
+ Clear the console screen of cluttered text CORRECT
+
+ 
+ Go back one directory level
+
+ 
+ List a chart of support options
+
+ 
+
+ 
+ 2) What does the “git init” command do?
+
+ 
+ Displays the observed differences for a file
+
+ 
+ Removes the specified files to the Git staging area
+
+ 
+ Initializes or assigns a directory to now become a Git local repository CORRECT
+
+ 
+ Merges a branch
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ Case-sensitive: This refers to a programming language where capital and lowercase letters affect the syntax. Some languages allow you to write code no attention given to capitalization or lowercase letters, while others won’t operate unless you write the code exactly.
+
+ 
+
+ 
+ EXAMPLE: Python is a case-sensitive programming language. 
+
+ 
+
+ 
+ In Python, the following code would print Hello, World! on the screen (note: the only “code” in the following line would be print() - the text within the quotation marks is not code):
+
+ 
+
+ 
+ print(“Hello, World!”)
+
+ 
+
+ 
+ But if you wrote your code as follows, there would be a syntax error and the text wouldn’t be displayed. This is because, in Python, the print command does not begin with a capital P:
+
+ 
+
+ 
+ Print(“Hello, World!”)
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE B. Branching
+
+ 
+
+ 
+
+ 
+ When you use the command, "git init", the current location within your file system will be assigned as a local git repository. So you will want to be sure to use this command with a project folder you have created specifically for your project files.
+
+ 
+
+ 
+ If you have created and initialized the "myResume" project folder while you were following along with this tutorial series. (Step 60 at about 3:34) Then this is your project folder.
+
+ 
+
+ 
+ In this video, we will create and initialize another Git project folder and named it "myProjects" just as a review. You should not actually need to create and initialize multiple folders as local Git repositories, this was just a review so that you would have more practice with the process.
+
+ 
+
+ 
+ We realize that you have not had much practice yet using Git so it is perfectly understandable if you are still a little confused. Please discuss this with your instructor if you are still feeling a little confused about what Git repositories are or need a little assistance navigating to your Git initialized folder.
+
+ 
+
+ 
+ Watch the following video:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/bfce94b2-c098-4ac3-a204-4fe76cdc19f5/Learning%20to%20Use%20Git_pt3.mp4 !!! <u>Working with Git and Bash Part Three</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+ Git is case sensitive
+
+ 
+ True CORRECT
+
+ 
+ False 
+
+ 
+
+ 
+ How do you move a file from the staging area to the repository so that changes are recorded?
+
+ 
+ git commit CORRECT
+
+ 
+ git add
+
+ 
+ git status
+
+ 
+ git save
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Hash: An operation that converts one value to another. It is usually used to mask data with different data. 
+
+ 
+
+ 
+ EXAMPLE: The original file name could be orangepants.docx and the hash could be absdfmoijgfsdnsadf. Both would point to the file. 
+
+ 
+
+ 
+  <Template-Video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/2b08f51b-05bb-46e6-984c-83c7fe240083/Learning%20to%20Use%20Git_pt4.mp4 !!! <u>Branches</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+ What does the git log command do
+
+ 
+ Shows the commit log (displays a history of changes and messages) CORRECT
+
+ 
+ Commits code to the git log
+
+ 
+ Change the master repository
+
+ 
+ Delete a file 
+
+ 
+
+ 
+ 2) Which of the following commands is used to list all of the branches in your repository and tell you which branch you’re currently in?
+
+ 
+ git current
+
+ 
+ git branch CORRECT
+
+ 
+ git list
+
+ 
+ git repo
+
+ 
+
+ 
+  <Template-Video>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE C. Merging
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/2b08f51b-05bb-46e6-984c-83c7fe240083/Learning%20to%20Use%20Git_pt4.mp4 !!! <u>Merging</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+
+ 
+ What does the git checkout command do?
+
+ 
+ Remove a branch from the repository
+
+ 
+ Switch branches or restore working tree files CORRECT
+
+ 
+ Clear the entire repository
+
+ 
+ Create a new branch
+
+ 
+
+ 
+ Which one of the following commands joins two or more branches together? 
+
+ 
+ git merge CORRECT
+
+ 
+ git combine
+
+ 
+ git branch
+
+ 
+ git join
+
+ 
+
+ 
+ What does the git add	command do?
+
+ 
+ Add file contents to the directory
+
+ 
+ Add file contents to the repository
+
+ 
+ Add file contents to the staging area CORRECT
+
+ 
+ Add file contents to a branch
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ BEST PRACTICES
+
+ 
+
+ 
+ “Imperative” means “relating to a command or a request.” Imperative mood refers to a verb (word describing action or state of being) which gives a command or makes a request. 
+
+ 
+
+ 
+ In the sentence: carry the wood to the pile, “carry” is given in an imperative mood. But if we said: I am carrying the wood to the pile, “carrying” would not be in an imperative mood. 
+
+ 
+
+ 
+ It is recommended that commit messages are written with an imperative mood and with explanatory text. 
+
+ 
+
+ 
+ For example, the following would be a good commit message: “Fix bug.” “Fixes bug” or “fixed bugs" would not be.
+
+ 
+
+ 
+ Writing clear commit messages in the imperative mood is considered the best practice because it matches up with commit message generated by commands like git merge and git revert. 
+
+ 
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ: 1) Which one of the following commit messages is written according to what is considered best practice?:
+
+ 
+ Corrected typo
+
+ 
+ Correct typo CORRECT
+
+ 
+ Correcting typo
+
+ 
+ Correction typo
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ ^GREEN^SUBMODULE D. Using Git Hub
+
+ 
+
+ 
+ GITHUB
+
+ 
+
+ 
+ Later on in the program, you will be adding various code and projects to GitHub, which is why the Version Control Course comes before the main coding courses on the program. 
+
+ 
+
+ 
+ One of the primary benefits of maintaining a GitHub profile is to create a sort of development portfolio for yourself that other developers and potential employers can view. Though it’s not common, some Tech Academy graduates have even been offered employment opportunities by people who happened upon their GitHub profile. It is wise to list one’s GitHub profile on their résumé.
+
+ 
+
+ 
+  <Template-Video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/72c7dd42-df4e-434c-9c40-5e17a0dd4686/Setup_your_GitHub_Account.mp4 !!! <u>Creating Your GitHub Account</u>
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+
+ 
+ ASSIGNMENT:
+
+ 
+
+ 
+ Provide an Instructor with the link to your personal GitHub account. 
+
+ 
+
+ 
+ NOTE:
+
+ 
+ To send in your assignment, you can use the message system within this LMS, or email an Instructor at:
+
+ 
+ Tech Academy students:		<u>instructor@learncodinganywhere.com</u> 
+
+ 
+ Concordia University students: 	<u>concordiaprofessor@learncodinganywhere.com</u> 
+
+ 
+ Academy of Learning students: 	<u>academyoflearncoding@learncodinganywhere.com</u> 
+
+ 
+
+ 
+  <Template-blank>
+
+ 
+
+ 
+ Fork: A copy of a repository. You can fork a repository and make changes to it without affecting the original project. Forks are commonly used to recommend changes to projects belonging to someone else or to utilize someone else’s project as a starting point for your own.
+
+ 
+
+ 
+ EXAMPLE: You can fork a repository on GitHub. 
+
+ 
+
+ 
+  <Template-Video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/5052a8c1-8828-428b-8b6f-26cc87b3d028/Using%20Git_with_GitHub_pt1.mp4 !!! <u>Pushing to GitHub Part One</u>
+
+ 
+
+ 
+ ^GREEN^<Template-Video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/eb92627b-5ae0-46ea-8f7c-b08ac9e7bdc0/Using%20Git_with_GitHub_pt2.mp4 !!! <u>Pushing to GitHub Part Two</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ QUIZ:
+
+ 
+
+ 
+ What does the git clone command do?
+
+ 
+ Clone your hard drive
+
+ 
+ Clone a repository into a new directory CORRECT
+
+ 
+ Make a copy of all files in a particular folder
+
+ 
+ Make a duplicate copy of the operating system
+
+ 
+
+ 
+ 2) Which one of the following defines “fork”?
+
+ 
+ Splitting documents into multiple parts.
+
+ 
+ A branch.
+
+ 
+ Transitioning into a new directory.
+
+ 
+ A copy of a repository. CORRECT
+
+ 
+
+ 
+  <Template-Video>
+
+ 
+
+ 
+ Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+
+ 
+
+ 
+ !!! Video: https://ttamediaservices-uswe.streaming.media.azure.net/8388e9d7-92a1-4bbe-9420-178f6e325417/Install_the_Github%20Desktop_App.mp4 !!! <u>Installing the GitHub Desktop Application</u>
+
+ 
+
+ 
+  <MCSA>
+
+ 
+
+ 
+ How do you download a project from GitHub onto your local hard drive?
+
+ 
+ Push the repository
+
+ 
+ Create a pull request 
+
+ 
+ Pull the repository
+
+ 
+ Clone the repository CORRECT
+
+ 
+
+ 
+ 2) A folder named /.git would mean?
+
+ 
+ You have yet to initialize the repository 
+
+ 
+ Git has not been downloaded properly
+
+ 
+ You have a useless folder in your file tree 
+
+ 
+ You have initialized the repository CORRECT
+
+ 
+
+ 
+ 3) What does the git add -a command do?
+
+ 
+ Upload changes to Github
+
+ 
+ Overwrite all changes, which is irreversible
+
+ 
+ Add the most recent changes to the staging area CORRECT
+
+ 
+ Upload changes to the live site 
+
+ 
+
+ 
+ 4) You have committed changes on your local machine. How would you then update the project on GitHub? 
+
+ 
+ Pull the changes
+
+ 
+ Push the changes CORRECT
+
+ 
+ Switch the changes
+
+ 
+ Transpose the changes
+
+ 
+
+ 
+ 5) Using GitHub, how many developers can simultaneously work on a project?
+
+ 
+ 0, Github is not designed for team projects
+
+ 
+ 1
+
+ 
+ Unlimited CORRECT
+
+ 
+ 4
+
+ 
+
+ 
+  <Template-blank & Note>
+
+ 
+ Final Drill:
+
+ 
+
+ 
+ We are going to pretend that you work for a small software firm. The firm has written a piece of software using Small Basic and it currently has an error. Your company has requested that you make the appropriate correction.
+
+ 
+
+ 
+ You will need to fork the project files from the remote repository to your own GitHub account, clone the forked files onto your local hard drive, make your changes, commit your changes back up to your GitHub account, and create a pull request, which will effectively notify your employer that your changes are ready for review.
+
+ 
+
+ 
+ 1.) Sign in or create your own personal GitHub profile.
+
+ 
+ !!! Video: https://github.com/login !!! <u>Sign in to GitHub here</u>
+
+ 
+
+ 
+ 2.) From inside of your account profile, use the search field for and open the, “the-tech-academy/office_hours”, The Tech Academy’s GitHub repository.
+
+ 
+ <img src="cid:Image_4.png" />
+
+ 
+ <img src="cid:Image_5.png" />
+
+ 
+
+ 
+ 3.) With the-tech-academy/office_hours repository open, click the “Fork” button and create a fork that will be attached to your own GitHub account.
+
+ 
+ <img src="cid:Image_6.png" />
+
+ 
+
+ 
+ 4.Now that you have the fork of the project attached to your own profile, click on the “Clone or download” button.
+
+ 
+ <img src="cid:Image_7.png" />
+
+ 
+
+ 
+ 5.) Click the “Open in Desktop” link to launch the GitHub’s Desktop application.
+ <img src="cid:Image_8.png" />
+
+ 
+
+ 
+ 6.) From GitHub’s Desktop application, enter the local directory where you would like to paste the cloned repository into.
+
+ 
+
+ 
+ 7.) Navigate into the local directory of the repository you just created to begin editing the "officeHours.sb" file.
+
+ 
+
+ 
+ ^GREEN^8.) Using the Microsoft’s Small Basic Editor or a text editor, open “officeHours.sb” and on line 24, there is a typo. It currently reflects “Office Hour” but Your company has requested that you change “Office Hour” to “Office Hours” so that it is plural.
+
+ 
+ <img src="cid:Image_9.png" />
+
+ 
+ <img src="cid:Image_10.png" />
+
+ 
+
+ 
+
+ 
+ ^GREEN^9.) That’s it! Just be sure to commit your changes to your local repository so as to not lose any vital work.
+
+ 
+ <img src="cid:Image_11.png" />
+
+ 
+
+ 
+ ^GREEN^10.) Now that you have committed your changes into your own local cloned repository, you next will need to push your changes back up to your forked remote repository on your GitHub profile.
+
+ 
+ <img src="cid:Image_12.png" />
+
+ 
+
+ 
+ ^GREEN^11.) When all of your edits have been completed and pushed back up to your forked-remote repository, you will need to send your contributions to the original master branch of the “the-tech-academy/office_hours” repository. Select the “New Pull Request” button.
+
+ 
+ <img src="cid:Image_13.png" />
+
+ 
+
+ 
+ ^GREEN^12.) Once you've created a pull request, you will effectively be making your changes available for the project leader to see and verify and ultimately accept or deny your proposed changes into the master branch. (Since this project is hypothetical, no one will actually be merging your changes)
+
+ 
+ <img src="cid:Image_14.png" />
+
+ 
+
+ 
+ ^GREEN^13.) To complete the drill, copy your applicable GitHub link for the project into the box below and click submit.
+
+ 
+
+ 
+
+ 
+  <Final Quiz>
+
+ 
+ FINAL EXAMINATION:
+
+ 
+ 1)	Which ones of the following terms doesn’t mean the same thing as the rest?:a.	Source controlb.	Directory control CORRECTc.	Version controld.	Revision control	2)	Which one of the following is the correct definition of “branch”?:a.	A duplication of code or a portion of it, so that changes can be made to it without affecting the original code. CORRECTb.	A main location where data can be kept and handled.c.	An undertaking that typically has exact requirements and specifications.	d.	A collection of computer programs that typically perform similar functions.3)	Which one of the following terms means something different than the rest?a.	Directoryb.	Folderc.	Storage unit CORRECT4)	What does the ls command do? a.	Leaves off a file extensionb.	Displays the language structure c.	Lists a directory CORRECTd.	Deletes a list from memory5)	How is the command “change directory” abbreviated?a.	cd CORRECTb.	chdirc.	chdd.	changedir6)	What does the mkdir command do?a.	Marks a directiveb.	Marks a file for deletionc.	Moves a directory to a new locationd.	Creates a new directory CORRECT7)	Working directory, CWD, current directory and working tree are interchangeable terms.a.	True CORRECTb.	False8)	What does the git commit command do?a.	Pushes code to GitHub.b.	Moves a file into the staging area.c.	Moves a file from the staging area to the repository so that changes are recorded. CORRECTd.	Creates a new directory.9)	What does the git merge command do?a.	Joins two or more branches together. CORRECTb.	Merges changes into the repository.c.	Moves a file into the staging area.d.	Merges two directories together. 10)	Which one of the following terms is defined as: “A copy of a repository.”a.	Mergeb.	Fork CORRECTc.	Directoryd.	Folder11)      What is Version Control?
+
+ 
+ a.        Version control is the tools and processes that are used to manage multiple versions of computer files as the files change over time. CORRECT
+
+ 
+ b.        Version control is any program used to update software.
+
+ 
+ c.       Version control is the tools and processes that are used to test new software.
+
+ 
+ d.       Version control is a method of debugging code within a project.
+
+ 
+
+ 
+ 12)     Git is a programming language.
+
+ 
+ a.       True
+
+ 
+ b.       False CORRECT
+
+ 
+
+ 
+ 13)     What is the purpose of branching?
+
+ 
+ a.       To create an open source repository for anyone to use with their own projects that is open to the public
+
+ 
+ b.       To clone a repository.
+
+ 
+ c.       It allows one to explore a different approach to solving a computing problem through writing code while not stopping. CORRECT
+
+ 
+ d.       It can connect to remote databases via git.
+
+ 
+
+ 
+ 14)     What is the primary branch of a repository called?
+
+ 
+ a.       The First branch
+
+ 
+ b.       VIP branch
+
+ 
+ c.       Top Branch
+
+ 
+ d.       Master Branch CORRECT
+
+ 
+
+ 
+ 15)     Git status is a useful command that should be used frequently.
+
+ 
+ a.       True
+
+ 
+ b.       False
+
+ 
+
+ 
+ 16)     Git and Github utilize the copy-modify-merge method of version control systems.
+
+ 
+ a.       True CORRECT
+
+ 
+ b.       False
+
+ 
+
+ 
+ 17)     Git is based on what operating system?
+
+ 
+ a.       Windows
+
+ 
+ b.       UNIX CORRECT
+
+ 
+ c.       MS-DOS
+
+ 
+ d.       Ubuntu
+
+ 
+
+ 
+ 18)     What is the working directory?
+
+ 
+ a.       The directory you are currently working in as a developer. CORRECT
+
+ 
+ b.       Your remote repository in git.
+
+ 
+ c.       Any uncorrupt directory in the C drive.
+
+ 
+ d.       The directory that handles most of the data flow between your repositories.
+
+ 
+
+ 
+ 19)     What is a staged file?
+
+ 
+ a.       A committed file.
+
+ 
+ b.       A file that has been pushed to your remote repository.
+
+ 
+ c.       A file that could be corrupt and needs to be repaired.
+
+ 
+ d.       A file that has been marked to be included in your next commit.
+
+ 
+
+ 
+ 20)     What is an untracked file in git?
+
+ 
+ a.       Any files that have been committed already and have no changes
+
+ 
+ b.       Any files in your working directory that were not saved and are not in your staging area. CORRECT
+
+ 
+ c.       Any files that are not inside any of your local repositories
+
+ 
+ d.       Any files that are in the staging area
+
+ 
+
+ 
+ 21)     How should Git commit comments be formatted?
+
+ 
+ a.       Present imperative mood
+
+ 
+ b.       Past indicative
+
+ 
+ c.       Present interrogative
+
+ 
+ d.       Present conditional
+
+ 
+
+ 
+ 22)     Choose the proper Git commit comment:
+
+ 
+ a.       Added update to nav bar styling
+
+ 
+ b.       Adding update to nav bar styling
+
+ 
+ c.       Add update to nav bar styling CORRECT
+
+ 
+ d.       This will add update to nav bar styling
+
+ 
+
+ 
+ 23)     Fill in the blank: ____ ajax request from ‘post’ to ‘get’
+
+ 
+ a.       I changed
+
+ 
+ b.       This will change
+
+ 
+ c.       Change CORRECT
+
+ 
+ d.       Fixed
+
+ 
+
+ 
+ 24)     Fill in the blank: ____ new C# card game application
+
+ 
+ a.       Update CORRECT
+
+ 
+ b.       Making a
+
+ 
+ c.       Here is a
+
+ 
+ d.       Fixed
+
+ 
+
+ 
+ 25)     Fill in the blank: ____ rendering behaviors on 300px or smaller screens.
+
+ 
+ a.       Created
+
+ 
+ b.       Edited
+
+ 
+ c.       Imagine
+
+ 
+ d.       Fix CORRECT
+
+ 
+
+ 
+ 26)     When you edit a forked repository it will make changes to the original project.
+
+ 
+ a.       True
+
+ 
+ b.       False CORRECT
+
+ 
+
+ 
+ 27)     In GitBash, how do you view hidden files and folders?
+
+ 
+ a.       ls -a CORRECT
+
+ 
+ b.       ls -mv
+
+ 
+ c.       ls -ls
+
+ 
+ d.       ls -h
+
+ 
+
+ 
+ 28)     In Gitbash it is a best practice to nest repositories (have a repository within a repository)
+
+ 
+ a)       True
+
+ 
+ b)       False CORRECT
+
+ 
+
+ 
+ 29)     In gitbash, what command would you use to remove a .git folder?
+
+ 
+ a.       rmdir .git
+
+ 
+ b.       cd .git
+
+ 
+ c.       mkdir .git
+
+ 
+ d.       rm -rf .git CORRECT
+
+ 
+
+ 
+ 30)     When uploading a project, you should include all supporting files for it, 
+
+ 
+ a.       True CORRECT
+
+ 
+ b.       False
+
+ 
+
+ 
+ ^GREEN^<Template-blank & Note>
+
+ 
+
+ 
+ ASSIGNMENT:
+
+ 
+ Write an essay that answers the following questions:
+
+ 
+
+ 
+ What benefits are there in understanding Git, GitHub and version control?
+
+ 
+ How can you use these tools as a software developer?
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 

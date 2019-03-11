@@ -1,0 +1,49 @@
+# sample course csv
+
+Titles should not have p tags around them.
+
+==== MODULE ====
+# module name~number~title
+MODULE~10~The Elements of a Computer Program
+## If Final Exam
+MODULE~~Final Exam
+
+==== SUBMODULE ====
+# submodule name~letter~title
+SUBMODULE~A~Introduction to the Stuff
+# End of Module (n = ModNumber)
+SUBMODULE~~Module n Quiz
+
+==== LESSON ====
+# type~title~text
+LESSON~Estimated Course Completion Time:~32 hours of study
+LESSON~Instructions~Tech Academy courses are designed on an increasing gradient of difficulty with easier concepts placed toward the beginning and advanced concepts towards the end. Later steps assume the student has completed all prior steps. Courses sometimes refer back to earlier content. <IMAGE2> The courses must be done in sequence with each step fully completed before moving on to the next. Please do not skip around on courses.
+# lesson body separate <br>
+LESSON~~title~~text<br>text<br>
+# Examples are 'Inline'
+<example> [example text] </example>
+
+==== QUESTION ====<
+# skipping ahead a little
+## type (question)~answers (correct answer first)~
+QUESTION~Knowledge Check #1~Question 1 of 4~Which of the following is not one of the purposes of this course?~To train students on where to find technical positions. ~To teach a student what to expect as a software developer in the real world.~To train a student how to think like a computer programmer. ~To provide a student with what may be their first experience in writing code through utilization of the programming language Small Basic.  
+## If End Module Quiz
+SUBMODULE~~Module n Quiz
+## If Final Exam
+MODULE~~Final Exam
+
+==== OBJECTIVE ====
+# Learning objectives should be in the following format
+OBJECTIVE~Learning Objectives: {submodule heading}~{letter of the submodule} - {submodule heading again}~{tilde separated values for each objective}
+# ex:
+OBJECTIVE~Learning Objectives: Course Overview~A - Course Overview~Describe basic version control terms~Explain what version control systems are~Differentiate Git and GitHub
+
+
+==== VIDEO ====
+# type (video)~title~link
+VIDEO~Welcome to the Overview of Software Development Course~https://ttamediaservices-uswe.streaming.media.azure.net/39d2552c-4172-40d9-bdad-a81eb15ffd6b/2018%20What%20is%20Computer%20Programming.mp4
+
+==== DELETE ====
+Lines that look like:
+	LESSON~~QUIZ
+

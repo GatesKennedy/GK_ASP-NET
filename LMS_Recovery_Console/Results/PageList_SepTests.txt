@@ -1,0 +1,152 @@
+======  page 1  ======
+======  page 2  ======
+======  page 3  ======
+======  page 4  ======
+======  page 5  ======
+======  page 6  ======
+VIDEO~~An Introduction to the HTML and CSS Course~~https://ttamediaservices-uswe.streaming.media.azure.net/e922e6b7-5f34-4c41-94cc-83035292f5eb/introduction%20to%20the%20HTML%20and%20CSS%20course(revised).mp4
+======  page 7  ======
+======  page 8  ======
+======  page 9  ======
+======  page 10  ======
+======  page 11  ======
+======  page 12  ======
+======  page 13  ======
+======  page 14  ======
+======  page 15  ======
+======  page 16  ======
+^G^ SUBMODULE B. Learning the Language of Developers
+======  page 17  ======
+======  page 18  ======
+======  page 19  ======
+======  page 20  ======
+======  page 21  ======
+======  page 22  ======
+======  page 23  ======
+======  page 24  ======
+======  page 25  ======
+^G^ SUBMODULE C. Additional Web Development Terminology
+======  page 26  ======
+======  page 27  ======
+======  page 28  ======
+======  page 29  ======
+======  page 30  ======
+======  page 31  ======
+======  page 32  ======
+======  page 33  ======
+======  page 34  ======
+======  page 35  ======
+======  page 36  ======
+======  page 37  ======
+======  page 38  ======
+======  page 39  ======
+======  page 40  ======
+======  page 41  ======
+======  page 42  ======
+======  page 43  ======
+======  page 44  ======
+======  page 45  ======
+======  page 46  ======
+======  page 47  ======
+======  page 48  ======
+======  page 49  ======
+======  page 50  ======
+======  page 51  ======
+======  page 52  ======
+======  page 53  ======
+======  page 54  ======
+======  page 55  ======
+^G^ SUBMODULE A. HTML Anatomy
+======  page 56  ======
+======  page 57  ======
+======  page 58  ======
+======  page 59  ======
+======  page 60  ======
+VIDEO~~Clearing the Browser Cache~~https://thetechacademy.azureedge.net/htmlandcss/clear_browser_cache.mp4
+======  page 61  ======
+======  page 62  ======
+======  page 63  ======
+======  page 64  ======
+^G^ SUBMODULE B. Understanding HTML Elements
+======  page 65  ======
+======  page 66  ======
+======  page 67  ======
+======  page 68  ======
+======  page 69  ======
+======  page 70  ======
+Knowledge Check #1
+
+======  page 71  ======
+======  page 72  ======
+======  page 73  ======
+^G^ SUBMODULE C. The HTML Template
+======  page 74  ======
+======  page 75  ======
+======  page 76  ======
+======  page 77  ======
+======  page 78  ======
+======  page 79  ======
+======  page 80  ======
+======  page 81  ======
+======  page 82  ======
+======  page 83  ======
+======  page 84  ======
+======  page 85  ======
+======  page 86  ======
+======  page 87  ======
+======  page 88  ======
+VIDEO~~Setting Up Our Working Environment~~https://ttamediaservices-uswe.streaming.media.azure.net/1fde1002-f3a5-4e3f-95ee-6f94afbdf169/Basic%20HTML_CSS%20Series_IDE.mp4
+======  page 89  ======
+======  page 90  ======
+======  page 91  ======
+^G^ SUBMODULE B. The HTML Template
+======  page 92  ======
+======  page 93  ======
+VIDEO~~Basic HTML_CSS Series_HTML Template~~https://ttamediaservices-uswe.streaming.media.azure.net/01c6f45a-361f-4939-a7a7-c00d3e639eda/Basic%20HTML_CSS%20Series_HTML%20template.mp4
+======  page 94  ======
+======  page 95  ======
+======  page 96  ======
+======  page 97  ======
+======  page 98  ======
+======  page 99  ======
+======  page 100  ======
+^G^ SUBMODULE B. Exploring the Most Common HTML Tags
+======  page 101  ======
+======  page 102  ======
+======  page 103  ======
+======  page 104  ======
+======  page 105  ======
+^G^ SUBMODULE C. Implementing Essential HTML Elements
+======  page 106  ======
+======  page 107  ======
+======  page 108  ======
+======  page 109  ======
+======  page 110  ======
+SUBMODULE A. Create Multiple HTML Pages
+======  page 111  ======
+VIDEO~~Using the Anchor Element~~https://ttamediaservices-uswe.streaming.media.azure.net/076043ea-8692-4319-9ce0-50f631982b75/Basic%20HTML_CSS_Series_Anchor%20tag.mp4
+======  page 112  ======
+======  page 113  ======
+======  page 114  ======
+^G^ SUBMODULE B. Linking HTML Pages
+======  page 115  ======
+======  page 116  ======
+VIDEO~~Using the Image Element~~https://ttamediaservices-uswe.streaming.media.azure.net/abb2476a-83d6-4b77-8b2b-4c9c1fdb7d09/Basic%20HTML_CSS%20Series_IMG%20tag.mp4
+======  page 117  ======
+======  page 118  ======
+VIDEO~~How to Link Our HTML Pages Together Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/d0ca85ea-8ea3-4700-8627-8a7ffa3254c1/linkingHTML_pt1.mp4
+======  page 119  ======
+======  page 120  ======
+======  page 121  ======
+^G^ SUBMODULE C. A Preview of Cascading Style Sheets (CSS)
+======  page 122  ======
+======  page 123  ======
+VIDEO~~How to Link Our HTML Pages Together Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/d4ed0419-a7af-4c3a-8cae-55e3c3afacce/linkingHTML_pt2.mp4
+======  page 124  ======
+======  page 125  ======
+VIDEO~~How to Link Our HTML Pages Together Part 3~~https://ttamediaservices-uswe.streaming.media.azure.net/62ca9237-893a-45b9-9f5f-630283712097/linkingHTML_pt3.mp4
+======  page 126  ======
+======  page 127  ======
+======  page 128  ======
+======  page 129  ======
+======  page 130  ======

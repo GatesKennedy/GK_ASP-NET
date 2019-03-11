@@ -1,0 +1,7 @@
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\bin\Debug\LMS_Recovery_Console.exe.config
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\bin\Debug\LMS_Recovery_Console.exe
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\bin\Debug\LMS_Recovery_Console.pdb
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\obj\Debug\LMS_Recovery_Console.csproj.CoreCompileInputs.cache
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\obj\Debug\LMS_Recovery_Console.exe
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\obj\Debug\LMS_Recovery_Console.pdb
+C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\LMS_Recovery_Console\obj\Debug\LMS_Recovery_Console.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1442 @@
+﻿$$$
+MODULE 1. CSS Fundamentals and Associated Tools
+Learning objectives: 
+
+~~Push code to GitHub
+~~Describe the fundamentals of CSS
+~~Write CSS at a basic level
+~~Create a dynamic website
+
+SUBMODULE A. An Introduction to CSS	<Template-blank>
+
+Introduction to CSS
+A Little History About HTML and the Birth of CSS
+Cascading Style Sheets (CSS) is a language that was developed to offload some of the work that HTML had to perform in the past. Originally, when HTML was developed, it was only intended to build text-based websites. Images were merely ASCII art (images created with commas, underscores, apostrophes, etc.), and too much colored font was thought of as annoying.
+HTML was initially developed to afford the scientific and like-minded academic communities with a medium to produce and share documentation. In its infancy, the Internet was not relevant to most people, and the advertising industry had yet to realize its true potential. Businesses did not see a monetary need to have an online presence, and the notion of "web surfing" was not even a concept. Naturally, HTML was very basic and developers did not require much in the way of syntax and features.
+
+$$$
+
+Knowledge Check
+
+True or false? Pure HTML can achieve the same effects as CSS code.  FALSE
+
+$$$
+
+A Need for Change
+Eventually, as the Internet grew in popularity and more companies shifted their business models to adopt online ventures, the need for innovative web development features became overwhelming. At that time, technology was just not able to contend with the demand to add fancy images, animated gifs, and other flashy content. 
+The Internet and the medium that delivered the data from all of the servers to the rest of the population were very rudimentary. Bandwidth created a constant bottle neck and became a real barrier to creativity and innovation as image compressions and preloading larger blocks of data become a real art. If the developer was not savvy, their content could prove to be counterproductive, as users would not tolerate slow-loading websites and would surf elsewhere.
+Eventually, businesses began to demand databases, eye-catching images, show-stopping animations, and vividly-popping colors. It became crystal clear that HTML was never going to cut it alone. So, it was inevitable that other languages, like CSS and JavaScript, would be employed to solve this problem.
+Originally, developers were forced to use only HTML to manage colors, images, column dimension, font families, sizes and all other stylings. This archaic technique meant that the developer was forced to revisit the document anytime there were client requests for style changes. This proved to be very time consuming and nearly unmanageable for larger websites.
+
+$$$
+
+CSS to the Rescue!
+If a website had considerable amount of web documents that all required a rebranding or any other kind of alteration, the developer was going to be very busy, struggling to make code adjustments to every single document. Luckily, CSS was introduced in the late 90's to increase coder efficiency. CSS effectively separated the basic HTML structure from the styling. CSS allowed the developer to manage larger websites with fewer lines of code, located within just a few centralized .css documents.
+CSS introduced the concept of grouping many similar HTML elements into Classes where developers would be able to make style changes, across multiple pages, all at once by simply making a few changes to the corresponding Class attributes referenced within the centralized .css document. This saved developers considerable time and effort, encouraging sophisticated web designs and heralding in advanced, developmental innovations such as rollover effects, gradient colors, image overlays, form layering, transparencies, and even 3D animation.
+Where it was once necessary to employ resource-intensive languages like JavaScript to perform simple front-end effects such as movement, color transitions, roll-over effects, and simple animations, CSS stepped in to generate these effects with minimum lines of code. CSS (specifically CSS3) has freed up JavaScript to focus on more complex usages and the back-end infrastructure.
+
+$$$
+
+Basic CSS Syntax
+CSS syntax consists of CSS selectors with key attributes and values. CSS selectors correspond with their HTML element counterparts. This process of matching CSS selectors with their HTML element counterparts is termed "CSS targeting." The following is an example:
+<img src="cid:IMAGE_0.png" />
+<img src="cid:IMAGE_0.png" />
+
+
+$$$
+
+Knowledge Check
+True or false? CSS was developed to replace HTML. FALSE
+
+$$$
+
+^G^ SUBMODULE B: Visual Studio Code, Live Share and GitHub
+
+Visual Studio Code
+
+Up to this point we’ve been using Notepad++ as our code editor. That’s about to change. The following steps will guide you through the process of installing and navigating an IDE called Visual Studio Code. Don’t be surprised when later videos continue to instruct you using Notepad++; you will simply follow along using Visual Studio Code.
+
+$$$
+Download and install the following:
+
+Download and install Visual Studio Code
+VIDEO~~https://code.visualstudio.com/download~~https://code.visualstudio.com/download
+
+Download and install Node.js for debugging locally
+VIDEO~~https://nodejs.org/en/download/~~https://nodejs.org/en/download/
+
+Download and install GIT version control. , rRequires a local Git Install.
+VIDEO~~https://git-scm.com/download~~https://git-scm.com/download
+
+$$$
+
+Basic Visual Studio Code Layout 
+
+Once you have Node.js and Visual Studio Code installed, open Visual Studio Code. If you haven’t opened any files, the first thing you’ll see is the Welcome tab, where you can access many features like recent files, IDE customization and an Interactive Playground that will help you learn to use Visual Studio Code (VS Code).
+
+Activity Bar: The leftmost column of the window on the left side of the screen with medium sized icons gives you access to Side Bars,  including “Explorer” where you can find all of your files, “Search”, “Source Control”, “Debug” and “Extensions.”
+
+Editor Bar:  At the top of VS Code window is a row with tabs for each open file like a web browser.
+
+Panels: Windows on the bottom including “Problems” with your program, Visual Studio Code “Output,” the “Debug Console” (like one you would find in the developer features of a web browser), and a “Terminal” where you can execute commands as if you were in a Terminal or Command Prompt without leaving VS Code. 
+
+If the panel area isn’t visible, you can open it by selecting “View” at the top of the application and selecting any of the panels, like “Problems.” You can also access any of the other panes and windows from the “View” menu.
+
+Status Bar: The thin band on the bottom of the screen is where you will often find access to many extension features and document information that you have installed, like document encoding and Version Control. Almost all of the information is clickable to allow you to make changes.
+
+Command Palette: If you press “CTRL + P” at any time you will see a dropdown at the top of the page called the Command Palette where you can type commands. This will often appear when extensions need you to select an option or enter text, like when committing to Source Control.
+
+^G^ <Note>
+Note: Every time you close and reopen VS Code, it will save your current layout 
+
+$$$
+
+Your First Program
+
+^^To get started, open the “Explorer” from the Activity Bar by clicking the top icon.
+
+^^If you have not opened a folder yet, click “Open Folder” and navigate into an empty folder or create a new empty folder and open it. You can open individual files, but in order to debug or LiveShare you’ll need to open a folder.
+
+^^You will now see two panes in the “Explorer” Side Bar, the “Project Folder” showing the name of the folder and the “Open Editors.” If you put your mouse in the “Project Folder” area you will see a few icons next to the name of the folder. Select the first icon to create a new file. Name it “app.js” and press Enter. 
+
+^^You’ll notice on the right side of the “Status Bar” that it says “JavaScript.” VS Code automatically guesses the language you are using based on file extension and provides the appropriate IntelliSense and debugging. Occasionally you’ll want to change that, e.g., if VS Code guesses wrong because of your file extension or if you have multiple languages in one file like html and JavaScript.
+
+Note: If app.js doesn’t open immediately, double click the filename to open it.
+
+5. 	Type: 	
+var greeting = 'Hello World';
+    console.log(greeting);
+
+6. 	The first line will create a variable named “greeting” and assign it the value “Hello World.” The second line will output the variable to the console. 
+
+7.	 Press “Ctrl”+“S” or go to the “File” menu and select “Save”
+8. 	To run the program, open the Terminal Panel from Terminal > New Terminal or using the keyboard shortcut (Ctrl + ` in Windows). Please note that this is the backtick, not a single quote. 
+
+In the terminal, type “node app.js” and press Enter. You may have to manually add “node” to your Windows PATH in Environment Variables. 
+
+If everything works right, “node” should be colored yellow if you haven’t changed your theme, and “Hello World!” will be displayed.
+
+$$$
+
+Basic Debugging
+
+In debugging, we can monitor the progress of a program including variable values.
+
+^^To debug the program, click the “Debug” button in the Action Bar.
+
+^^To the left of your code you’ll see line numbers.  Move your cursor over the number “2” and then slowly move it left until a faded red dot appears. Click the dot and it will brighten and stay in place. This dot signifies a “breakpoint” for debugging.
+
+^^At the top of the Debug Side Bar, click the play button next to where it says “No Configuration.” 
+
+If you’ve installed multiple debuggers, select Node.js in the Command Palette. In the debug console you should see the command that VS Code executed and the program will stop executing where the breakpoint was placed, indicated by a yellow arrow in the code.
+
+^^Move your cursor over the variable “greeting” and after a second you will see the value of “greeting” pop up.
+ 
+^^In the Debug Side Bar under “Variables” you can also see the value of all variables currently in use. Where it says ‘greeting: “Hello World!”’ double click “Hello World!” The value of the variable and the variable will be highlighted. Replace “World” with “Universe” and press Enter. 
+
+^^In the middle of the Editor Bar you’ll see a set of arrows, a Stop button and a Continue button on the left side. These buttons allow you to step through one line at a time, continue to the next breakpoint, restart, and stop debugging. 
+
+Press “Continue” to continue running the program. You will see that instead of printing “Hello World,” it printed “Hello Universe.” You’ve updated the variables while the program is running.
+
+
+$$$
+
+Debugging Front-End HTML and Javascript
+
+To debug HTML and JavaScript we’ll need to add an extension to VS Code to see it in the browser. VS Code is extendable so that you don’t have to install anything you don’t want and you can make your own extensions if you’d like.
+
+^^To download the Chrome Debugger navigate to “Extensions” in the Activity Bar and search for “Chrome.”
+
+^^Click the “Debugger for Chrome” extension and select “install” from the tab that opens.  Once it installs you’ll need to restart VS Code.  To do this, you can just click “reload.”
+
+^^Update your code in app.js by putting it in a function so that we can call it. The last line will set an html element to the value of your variable.
+function UpdateButton(){
+    var greeting = 'Hello World';
+    document.getElementById('btn').innerHTML = greeting;
+    }
+
+^^Add a new file to the project called index.html and add this code
+<html>
+<head>
+<script src="app.js"></script>
+</head>
+<body>
+<button onclick='UpdateButton()' id='btn'>Click Me</button>
+</body>
+</html>
+
+“onclick” will call our function when the button is pressed
+
+^^Navigate to the debugger and next to the Play button click “No Configurations” and select  “Add Configuration” in the dropdown.
+
+^^In the “Command Palette” select “Chrome.” A launch.json will be created in your project folder where you can make changes to how you want your debuggers to launch your programs.
+
+^^Update the “launch.json” file to the code below and save. Be sure to include all of the curly brackets.
+
+{
+   "configurations": [
+       {
+           "type": "chrome",
+           "request": "launch",
+           "name": "Debug in Chrome",
+           "url": "${workspaceFolder}/index.html",
+       }
+   ]
+}
+
+^^Back in the “Debugger” Side Bar next to the Play button you can now select the current configuration and press Play. Chrome should open and the page should be visible. If your breakpoint is still in place, clicking the button should pause the program in VS Code. To continue just press Play again. At this point you should see the value of your button changed to “Hello World.”
+
+$$$
+
+Please read the following document on Live Share:
+
+VIDEO~~https://docs.google.com/document/d/1tU56CyNd-d9odUEz6OBncXR2T9CVl2veR1lUaBbY1tA/edit?usp=sharing  ~~https://docs.google.com/document/d/1tU56CyNd-d9odUEz6OBncXR2T9CVl2veR1lUaBbY1tA/edit?usp=sharing
+
+$$$
+
+Assignment
+ 
+Before we get back to working with CSS, let’s revisit GitHub and HTML for a moment.
+
+Pretend you work for a software company. The firm has a product announcement web page and would like you to make some changes to the HTML document.
+
+Your instructions are to retrieve the web page files from a remote repository, make your changes, then push your changes back up to the remote repository.
+ 
+VIDEO~~1. Sign in to your personal GitHub profile.~~https://github.com/login
+
+VIDEO~~2. Make a clone of the project files from https://github.com/the-tech-academy/virtual_dr, (this is The Tech Academy’s GitHub repository)~~https://github.com/the-tech-academy/virtual_dr
+
+3. Click the “Clone or download” button and then the “Open in Desktop” link to open GitHub’s Desktop application. 
+
+4. From GitHub’s Desktop application, enter the local directory into which you would like to paste the cloned repository.
+
+5. Navigate into the local directory of the repository you just created to begin editing the HTML file (virtual_dr.html).
+
+6. Change the heading “COMING SOON” to “AVAILABLE.” 
+
+7. Commit the change to your local repository.
+
+8. Push your changes by selecting the “New Pull Request” button. Enter in your comment concerning your contribution to the project files. Then click the “Create pull request” button.
+
+9. Inform an Instructor that you have completed this exercise. 
+
+
+
+
+$$$
+
+SUBMODULE C. Coding in CSS 
+
+Watch this video in full. Follow along, performing the same actions on your computer.
+ 
+VIDEO~~Basic CSS Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/1ada198d-a938-4ea0-9b1e-75562c958115/Basic%20CSS%20Series_pt1.mp4
+(page 51)
+
+$$$
+
+Knowledge Check
+
+Which of the following statements is correct? 
+^^HTML code needs to be properly indented for browsers to display correctly
+^^The body element cannot have an ID attribute
+^^There can be multiple CSS files to target and style a single HTML page CORRECT
+^^A div element may contain any other HTML element nested inside it
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Basic CSS Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/5a005ff4-948d-470f-b1e4-d24066b14895/Basic%20CSS%20Series_pt2.mp4
+(page 52)
+
+$$$
+
+Knowledge Check
+
+Which of the following are valid ways of declaring color values in CSS?
+
+^^HTML/CSS color name (e.g., red, blue, yellow, magenta)
+
+^^Hex Code (e.g., #abc123)
+
+^^Decimal Code [e.g., rgb(5,100,34)]
+
+^^All three are valid CORRECT
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+
+VIDEO~~Basic CSS Part 3~~https://ttamediaservices-uswe.streaming.media.azure.net/1ad8ad10-b0c8-4955-8a3c-f95e15b2359e/Basic%20CSS%20Series_pt3.mp4
+
+
+$$$
+
+Knowledge Check
+
+Which of the following CSS code snippets are equivalent?
+^^margin: 1px 2px 1px 2px;
+^^margin: 1px 2px;
+^^
+margin-top: 1px; 
+margin-bottom: 1px;
+margin-left: 2px;
+margin-right: 2px;
+^^All three above are equivalent CORRECT
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Basic CSS Part 4~~https://ttamediaservices-uswe.streaming.media.azure.net/d7191f90-5ed7-469a-9c04-fb57644ee6cd/Basic%20CSS%20Series_pt4.mp4
+(page 54)
+
+$$$
+
+Knowledge Check
+
+<div>...<div>
+<div>...<div>
+<div>...<div>
+<div>...<div>
+<div>...<div>
+Which of the following CSS code snippets are equivalent (i.e., target the same divs) given the HTML above?
+^^div:nth-child(2n) CORRECT
+^^div:nth-child(even) CORRECT
+^^div:nth-of-type(even) CORRECT
+^^All are equivalent CORRECT
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Basic CSS Part 5~~https://ttamediaservices-uswe.streaming.media.azure.net/2de75672-5c6c-4a6a-a0a2-08cb8d5c4f1e/Basic%20CSS%20Series_pt5.mp4
+(page 55)
+
+$$$
+
+Knowledge Check
+
+<img src="cid:IMAGE_0.png" />
+
+Which of the images most closely resembles the result of the code above? 
+^^CORRECT
+<img src="cid:IMAGE_0.png" />
+^^
+<img src="cid:IMAGE_0.png" />
+^^
+<img src="cid:IMAGE_0.png" />
+^^
+	<img src="cid:IMAGE_0.png" />
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~BASIC CSS PT 6~~https://ttamediaservices-uswe.streaming.media.azure.net/420ab411-132c-4570-91e6-a16ead719ac1/Basic%20CSS%20Series_pt6.mp4
+(page 56)
+
+$$$
+
+Knowledge Check
+
+What will be the effect of the following CSS? 
+.container:hover {
+	color: red;
+}
+
+.container:hover {
+	color: black;
+}
+
+^^Text inside the .container element will turn red when the user hovers over it
+^^Text inside the .container element will turn black when the user hovers over it CORRECT
+^^The contradicting rules will result in an error and the HTML will not be displayed properly
+^^On hover, the .container element will turn red at first, and turn black on hover the rest of the time.
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Basic CSS Part 7~~https://ttamediaservices-uswe.streaming.media.azure.net/a57d17b2-57d8-4ded-b784-56a83833069f/Basic%20CSS%20Series_pt7.mp4
+(page 57)
+
+$$$
+
+Knowledge Check
+
+div { background-color: white; font-size: 10px; transition: background-color 0.5s, font-size 1s;}
+div:hover { background-color: black; font-size: 20px;}
+
+The above CSS code will make it so that _________________ . 
+^^if the user hovers over a div, it and all other divs in the HTML document will change background color from black to white in 0.5s and change font-size from 20px to 10px in 1s
+^^if the user hovers over a div, it and all other divs in the HTML document will change background color from white to black in 0.5s and change font-size from 10px to 20px in 1s
+^^if the user hovers over a div, only it, and its parent div will change background color from white to black in 0.5s and change font-size from 10px to 20px in 1s
+^^if the user hovers over a div, only it will change background color from white to black in 0.5s and change font-size from 10px to 20px in 1s CORRECT
+
+$$$
+
+SUBMODULE D. Creating a Dynamic Website
+
+Finalizing a Web Page
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Finalizing our Web Page~~https://thetechacademy.azureedge.net/htmlandcss/Basic CSS Series_pt8.mp4
+(page 58)
+
+Now that you understand the basics of using an IDE, building a basic HTML skeleton, and stylizing your HTML with CSS, let's improve our project page. The videos that follow that can assist with your effort.
+
+$$$
+
+Knowledge Check
+
+True or false? The keyframes CSS rule defines an animation sequence that is invoked by the animation rule. TRUE
+
+$$$
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~How to Create a CSS Menu Rollover Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/e13167e6-e8cf-419d-8e1e-34cd22165122/Basic%20CSS%20Series_rollover%20menu_1.mp4
+(page 59)
+
+$$$
+
+Knowledge Check
+
+True or false? An unordered list, or a <ul> element, is employed to randomize a list each time the page is loaded. 
+FALSE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~How to Create a CSS Menu Rollover Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/7da48f30-db91-4aa9-9481-d2dd4358e390/Basic%20CSS%20Series_rollover%20menu_2.mp4
+(page 60)
+
+$$$
+
+Knowledge Check
+
+True or false? All divs are inline elements by default, unless otherwise specified in the display property. 
+FALSE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.: 
+VIDEO~~How To Create a CSS Menu Rollover Part 3~~https://ttamediaservices-uswe.streaming.media.azure.net/3cbebf2c-b0a1-4581-a976-e308ba5d89da/Basic%20CSS%20Series_rollover%20menu_3.mp4
+(page 61)
+
+$$$
+
+Knowledge Check
+
+Which of the following is true regarding the position property in CSS? 
+Note: It is recommended that you spend a few minutes to research this topic and understand its properties. 
+^^The child element inherits the same property as its parent, unless otherwise specified.
+^^position: relative; implies that the position will be relative to the element’s location if the position ishad the position been “fixed” 
+^^For the position property, “fixed” and “absolute” are equivalent attributes. 
+^^The default position value is “static.” TRUE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~How to Apply CSS to the Photo Gallery Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/53037036-15bc-4db7-ae28-ba2d321bda35/Basic%20HTML_CSS%20Series_Photo_Container_1.mp4
+(page 62)
+
+$$$
+
+Knowledge Check
+
+True or false? In an <img> element, 
+overflow: hidden; 
+results in undisplayed content to be hidden behind a scroll bar. FALSE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~How to Apply CSS to the Photo Gallery Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/d527af7f-f6c8-476e-8bb9-7b383d440361/Basic%20HTML_CSS%20Series_Photo_Container_2.mp4
+(page 63)
+
+$$$
+
+Knowledge Check 
+
+div {
+	transition-property: background-color; 
+	transition-duration: 1s 2s 3s 4s;
+}
+
+The above CSS instructs the browser to set the transition duration of the background-color property to 
+^^1s CORRECT
+^^2s
+^^3s
+^^4s
+
+$$$
+
+MODULE 2. Project: Space Resort
+Learning objectives: 
+~~Create functional websites
+~~Enhance websites with HTML and CSS
+~~Push HTML and CSS websites to GitHub
+
+SUBMODULE A. Creating the Skeleton for a New Project <Template-Video>
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Space Resort Project~~https://ttamediaservices-uswe.streaming.media.azure.net/a29ced23-c655-4461-9a4e-2d2010e5e864/space_station_pt1.mp4
+(page 64)
+For this project, we will create a fully-functional website. In the following video series, we will be creating a fictional website for a space resort company that is promoting their space-tour services. 
+Even though this is a fictional website, the techniques you will learn are real and can be used to help you with your future projects. We have broken this tutorial into three parts. The first part covers the basic HTML skeleton. The second and third parts covers CSS styling and animation effects for our website.
+Please follow along with the steps in this video series to create the final project. Be sure to upload your final code to your GitHub account and send a link to your Instructor for a pass. 
+
+$$$
+Watch the following video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/a29ced23-c655-4461-9a4e-2d2010e5e864/space_station_pt1.mp4
+(page 65)
+
+$$$
+
+Knowledge Check
+
+True or false? The CSS flexbox layout allows for more responsive web design by giving HTML elements the capability to rearrange themselves based on the size of the screen or window. TRUE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/6f1763b3-aff1-48f3-b5bc-11360078acdd/space_station_pt2.mp4
+(page 66)
+
+$$$
+
+Knowledge Check
+
+In form elements, the action attribute defines
+^^the HTTP request type or action verb
+^^the server-side script that will handle the form input CORRECT
+^^a description of the form that is only visible to developers 
+^^All of the above 
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+
+VIDEO~~Creating a Functional Web Page Tutorial Part 3~~https://ttamediaservices-uswe.streaming.media.azure.net/cde3e92a-830f-4f66-951f-23b66b0d395e/space_station_pt3.mp4
+(page 67)
+
+$$$
+
+Knowledge Check
+
+True or false? Two spaces (keystrokes of the spacebar) are equivalent to “&nbsp;&nbsp;” in the HTML document. FALSE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+
+VIDEO~~Creating a Functional Web Page Tutorial Part 4~~https://ttamediaservices-uswe.streaming.media.azure.net/dd089653-ab2b-418f-90b7-19551ba406b1/space_station_pt4.mp4
+(page 68)
+
+$$$
+
+Knowledge Check
+
+True or false? Implementing a font stack allows the end-user to select a font family from the stack. FALSE
+
+$$$
+
+SUBMODULE B. Adding Animation Effects
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 5~~https://ttamediaservices-uswe.streaming.media.azure.net/9f97b497-a6ab-4fd3-a6b5-d9e886564247/space_station_pt5.mp4
+(page 69)
+
+
+$$$
+
+Knowledge Check
+
+True or false? h1::after is an example of a pseudo-element whose default display property is set to inline. TRUE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 6~~https://ttamediaservices-uswe.streaming.media.azure.net/7e9540c9-b777-4b60-973f-548bb878e0b1/space_station_pt6.mp4
+(page 70)
+
+$$$
+
+Knowledge Check 
+
+True or false? In CSS the background rule can only point to an image in the local directory and not a resource on another server. False
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 7~~https://ttamediaservices-uswe.streaming.media.azure.net/f9e18a86-046d-414a-ad75-692b4378725c/space_station_pt7.mp4
+(page 71)
+
+$$$
+
+Knowledge Check
+
+In CSS, transition: color 1s linear 2s; is equivalent to:
+^^transition-property: color;
+^^transition-property: color; timing-function: linear;
+^^transition-delay: 2s;
+^^transition-property: color; timing-function: linear; transition-duration: 1s; transition-delay: 2s; CORRECT   
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+
+VIDEO~~Creating a Functional Web Page Tutorial Part 8~~https://ttamediaservices-uswe.streaming.media.azure.net/c9abca21-a2ce-4468-9213-a23ab81308d4/space_station_pt8.mp4
+(page 72)
+
+$$$
+
+Knowledge Check
+
+True or false? CSS code pertaining to animations must always be on a separate file or else it will not display properly. FALSE
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 9~~https://ttamediaservices-uswe.streaming.media.azure.net/64b48af3-0a73-43f5-8664-b2d391c1ead2/space_station_pt9.mp4
+(page 73)
+
+$$$
+
+Knowledge Check
+
+True or false? In CSS, border color must always be specified in hex. FALSE
+
+
+$$$
+
+Watch this video in full. Follow along, performing the same actions on your computer.:
+VIDEO~~Creating a Functional Web Page Tutorial Part 10~~https://ttamediaservices-uswe.streaming.media.azure.net/ed2d7bc3-fe24-498b-b5cc-bc2f0b76c74c/space_station_pt10.mp4
+(page 74)
+
+
+$$$
+
+Assignment
+Add the HTML/CSS project you just completed to your GitHub account and submit the link below. Make a note of this site so you can add to it in later courses.
+Submit your GitHub link below
+
+
+$$$
+
+Assignment
+Watch this video in full.
+
+VIDEO~~Using Dev Tools in the Browser~~https://ttamediaservices-uswe.streaming.media.azure.net/5bfdfcc9-e0a6-454d-be49-231a8c578555/browser%20dev%20tools.mp4
+
+Using what you just learned in the video, go to a website and view its source code (the HTML) to get an idea of how that page was written. 
+Write up what you learned from doing this exercise.
+Submit your assignment in the space below.
+
+$$$
+
+CSS Precedence
+
+Generally users need not worry about the order of precedence of CSS rules. However, it is important to keep in mind that there is a hierarchy in specificity. This will likely apply to code that has been worked on by several developers over a long period of time. 
+
+First of all, there are three ways developers can place CSS code — internally, externally and inline. 
+~~Internal CSS refers to code inside the <style> tags that reside inside the <head> tags. 
+~~External CSS refers to CSS code that is inside a separate (i.e. external to the HTML document) .CSS file. 
+~~Inline CSS is CSS code written within the element’s HTML tags.
+
+Inline CSS will always override internal or external CSS. For instance, if an external stylesheet instructed the browser to display fonts inside the paragraph element in red, but inline styling instructed the browser to display fonts inside the paragraph element in black, the inline style would win out and the fonts would be displayed in black.
+
+CSS code inside the <style> tags in the HTML head is equivalent to CSS in an external stylesheet. However, it is important to remember that if an element is targeted by multiple CSS declarations, the most specific selector will override the rest. The order of specificity is as follows: 
+1) Type selectors: selectors that target an element by its HTML name are least specific. 
+2) Class selectors: selectors that target an element by its class name are more specific than type selectors. 
+3) ID selectors: selectors that target an element by its ID are more specific than the other two selectors.
+
+$$$
+
+Attributes in HTML
+
+All elements can have attributes. Attributes constitute metadata that provides more specific instruction on the intended behavior of the element. For instance, an element can have a class attribute, ID attribute, style attribute, etc. In fact there are tens of attributes available to help style elements in particular ways. However, the class, ID and form-related attributes like action and method are most ubiquitous. So for instance, the class attribute can be thought of as metadata that may be used by an external CSS stylesheet to edit the format of an element. If inline CSS is being used, the style attribute serves as metadata for the browser to reference when styling that element. 
+
+$$$
+
+MODULE 3.  Best Practices
+Learning objectives: 
+~~Utilize the best practices of HTML and CSS
+
+SUBMODULE A. HTML and CSS Best Practices	<Template-Video>
+
+Watch this video in full:
+
+VIDEO~~HTML Best Practices~~https://ttamediaservices-uswe.streaming.media.azure.net/509357e6-0480-4968-93c6-f0d12a84dbea/HTML_Best_Practices.mp4
+(page 76)
+
+$$$
+
+Knowledge Check
+
+True or false? It is considered best practice to use HTML as much as possible to style a web page; CSS should be used sparingly. FALSE
+
+$$$
+
+Watch this video in full:
+VIDEO~~CSS Best Practices 2~~https://ttamediaservices-uswe.streaming.media.azure.net/4e5e037a-6c6e-415d-b795-c16bd11bbdd5/CSS_Best_Practices.mp4
+(page 77)
+
+$$$
+
+Knowledge Check
+
+True or false? It is considered best practice to validate your CSS code often and preferably on W3C or a similar service to ensure that it compiles properly on all devices. TRUE
+
+$$$
+
+CSS Best Practices
+Here are some tips for writing and maintaining healthy code that won’t frustrate you or others later down the road:
+~~Use classes and IDs sparingly. Use them only when necessary. Not every HTML element on a page requires a class or id assignment. By needlessly assigning classes and ids, your code can become convoluted and difficult to follow.
+
+~~Create separate stylesheets for different styling purposes. If a section of your stylesheet is solely for the login page, then it is recommended to create a separate stylesheet for it.
+
+~~Use the CSS shorthand property names. For example, rather than margin-top, margin-right, margin-bottom, margin-left, you can code the shorthand as: margin: 1px 1px 1px 1px;
+
+~~Keep your code organized and comment thoroughly. This doesn’t mean to comment every little detail, but be sure to elaborate about anything that might be confusing.
+
+~~Use a code validator. The best is validator.w3.orgvalidator.w3.org. (Link below) This is a great way of making sure your code is accurate and will render properly.
+VIDEO~~validator.w3.org~~http://validator.w3.org/
+
+
+$$$
+
+SUBMODULE B. Common Mistakes to Avoid when Using HTML and CSS 
+
+Common Mistakes to Avoid with HTML
+1. Failing to Implement the Correct Doctype
+Without the correct document type definition, browsers will have to guess what language your page is written in and will most likely fail to properly apply the instructions contained within the document. The end result may not be exactly what was intended.
+
+^G^ <Template-blank>
+
+2. Forgetting to Encode the Document with the Correct Character Set
+The Character set meta data tells the browser what language and rules to use when displaying content.
+
+^G^ <Template-blank>
+
+3. Attempting to Employ Deprecated or Invalid Syntax
+The industry is an ever-evolving ecosystem, and many languages like HTML and CSS are not immune to technological improvements and changes. As the industry standards are adjusted, oftentimes their syntax and features adjust as well. For example the Bold tag, <b>, a valid inline styling tag from the past, has since been superseded by the newer <strong> style tag.
+Please visit the link below for detailed information on current HTML standards:
+VIDEO~~https://www.w3.org/TR/html5/~~https://www.w3.org/TR/html5/
+
+^G^ <Template-blank>
+
+4. Publishing Markup with Syntax Mistakes
+Though it may seem a minor and easily overlooked mistake, a browser that is interpreting the instructions may not easily discern the intended purpose. Often it only takes one errant tag being left open or an improperly applied quotation mark to throw the entire meaning of the code out of context, producing some very anomalous results.
+
+^G^ <Template-blank>
+
+5. Parking Elements in Incorrect Locations
+The browser is very specific. It looks for a specific syntax and formatting and will parse syntax which it cannot understand or which doesn’t conform to the rules with peculiar results. 
+A <title> tag placed outside of the <head> tag will simply be omitted or worse yet, it may get mistakenly printed into the body text. Improperly placing body content inside of a <script> tag will also not produce the desired outcome.
+
+$$$
+
+Knowledge Check
+
+True or false? Currently there is no way to check for deprecated HTML and CSS syntax. FALSE
+
+^G^ <Template-blank>
+
+6. Improperly Applying or Failing to Close a Block-level Tag
+These kinds of mistakes will oftentimes produce blank spaces, strange anomalous artifacts, or formatting errors as the browser attempts to apply the markup and CSS instructions.
+^G^ <Template-blank>
+
+7. Convoluting or Overruling Content Styling
+Novice developers will often liberally apply inline styling syntax, but the most common way to manage styling is by controlling the styles with a separate CSS file. Using inline styling may be acceptable to a very small project, but as the project grows in complexity the inline styles may become convoluted or overruled by future CSS styling. Suffice to say that using inline styling is bad practice, and the earlier a novice developer can begin to learn to manage styles with CSS the better off they will be.
+
+^G^ <Template-blank>
+
+8. Using Incorrect File or Address Paths
+When the browser comes across code that has instructions to retrieve a file on the server or redirect to a web address where the path is invalid, the results will be less than professional.
+
+^G^ <Template-blank>
+
+9. Arbitrary Replacing or Using Outdated Practices
+This is an offense more likely to be committed by senior developers. In the past, it was customary to divide or compartmentalize content into manageable blocks by liberally applying the <div> tag. With the introduction to new standards in HTML, this practice has been greatly discouraged. 
+
+HTML5 introduced a suite of newer tags like <sections>, <article>, <aside> <media>, <canvas>, <nav>, and <footer> to name a few. These are called “semantic HTML tags” because, as the name suggests, the tag names convey meaning to the reader of the code. Examples of markup that is not semantic are <b> and <i>; these tag names do not convey much information about their functionality. 
+
+^G^ <Template-blank>
+
+10. Not Applying Enough Testing
+Developers sometimes fail to fully check their design across a suite of viewports and resolutions. As a result their code may not appear as intended to the viewers in their audience. Industry standards and devices are ever-changing; a developer should remain vigilant by appropriately and thoroughly testing their content.
+
+$$$
+
+Knowledge Check
+
+True or false? Code should be tested as little as possible to ship code faster. FALSE
+
+^G^ <Template-blank>
+
+11. Improperly Employing Special Characters
+
+The ampersand is just one of these special characters that aspiring developers fail to implement properly, and side effects may vary. To adeptly prevent these kinds of mistakes, these special characters need to be converted into their HTML entity equivalents. For example, the ‘&’ character should be represented in HTML with ‘&amp;’
+
+$$$
+
+12. Failing to Encode img Tags with an Alternative Text Description
+To comply with the standards in HTML5, every image inserted into an HTML5 document must have an ALT attribute. Though the ALT attribute must be present, its content may still be left empty if it is not necessary to present it: <img src=” image.jpg” alt="" /> 
+Many of these common mistakes can be avoided by thoroughly checking your code and passing it through W3C's Markup Validation Service or other online resources. 
+
+$$$
+Common Mistakes to Avoid with CSS
+1. Forgetting to Recognize that not all Browsers Are Created Equal
+A common blunder beginning developers make is expecting their code to be rendered in the same fashion across all browsers. Unfortunately, it’s not a perfect world, and despite the World Wide Web Consortium’s efforts to standardize markup language, competing browser technologies are not at all identical. What may look perfect in a Firefox browser may not necessarily appear as intended in an Internet Explorer browser. Your CSS should make use of multiple viewport controls and media breaks.
+
+$$$
+
+2. Seldom (or Never) Commenting CSS
+/* Just as with most programming languages, you should always comment your CSS. */ Neglecting to comment frequently will produce counter efficiency later on when you or someone else needs to revisit the CSS.
+
+$$$
+
+3. Not Planning a Project's Design to Formulate Consistent Concepts of Standardization
+When done properly and cleverly, a generic class framework that manages styling aspects which are anticipated to be repeated over and over again from one page to the next will save a considerable amount of time in the long run. Implementing standardizations early in a project so styles can be efficiently manipulated in CSS is the key.
+
+$$$
+
+Knowledge Check
+
+True or false? CSS is self-explanatory so commenting CSS code is not necessary. FALSE
+
+$$$
+
+4. Publishing Markup with Syntax Mistakes
+Though it may seem a minor and easily overlooked mistake, a browser, which is interpreting the instructions, may not easily discern the intended purpose. Often it only takes one forgotten and unclosed tag or improperly applied quotation mark to break the code.
+
+$$$
+5. Convoluting or Overruling Content Styling
+Invoking too many much inline CSS styles makes your code errant and difficult to manage. You will often times find yourself on wild goose chases, searching endlessly for conflicting style references. It is best practice to learn and master how to handle the specificity hierarchy of styling. gets handled.
+
+$$$
+
+6. Using Redundant Code
+Apply the DRY principle: - Don't Repeat Yourself. Whenever you discover that your CSS is repeating itself, you should refactor it. Take the following code, for example:
+p.ex1 {
+font: italic bold 12px/30px Georgia, serif;
+color: #0000ff;
+}
+p.ex2 {
+font: italic bold 12px/30px Georgia, serif;
+color: #0000ff;
+}
+Appropriately applying the DRY principle, it would be more efficient to combine redundant code that produces similar effects. You will accomplish the same outcome, save space, and make the code easier to manage. The DRY method version of this code might look like this:
+p.ex1, p.ex2 {
+font: italic bold 12px/30px Georgia, serif;
+color: #0000ff;
+}
+
+$$$
+
+7. Trying to Use HTML to Perform More than Just the Structure and Content
+It is best to avoid using deprecated styling features such as <b>, <i>, <center>, <u>, <span>, <font>, or <align>; these are examples of HTML tags that manipulate the style of document text, rather than the structure and content of the document. It is more efficient to address these effects with the CSS.
+
+$$$
+
+8. Forgetting that Many Properties are Inherited from their Parent Element
+Beginning developers tend to waste enormous amounts of their time debugging code due to this very fact. They often assign properties to parent elements, then later nest a child element into a particular parent element and fail to discover why the child element is behaving in a particular fashion.
+
+$$$
+
+Knowledge Check
+
+True or false? HTML should be used to form the scaffolding of the web page. CSS should be used to style the page. TRUE
+^G^ 	
+$$$
+
+9. Being Too Specific with Class Names or Using IDs Too Liberally
+CSS was developed to help make your design a lot easier to manage. UBy using less specific and generalized class styling makes it , it will be much easier to manage similar elements by using generic class styling. That is not to discredit specific selectors in any way — they have their merits, but it is best to use them sparingly whenever possible. Each coder has their own methods, but for the aspiring web designer, developing good habits early on is paramount. 
+
+$$$
+
+10. Trying to Reinvent the Wheel
+New developers sometimes focus too much of their valuable time reinventing their CSS when more often than not, there are already notable CSS frameworks available to swiftly accomplish what they were striving for. If your purpose is to learn CSS intimately and you have plenty of time to spare, then it is an excellent opportunity to write CSS from scratch. But if time is of the essence, using an established CSS framework can save you both headaches and considerable time.
+
+$$$
+11. Playing the Blame Game…and Losing!
+Many times the novice developer may assume that the fault lies with errant CSS coding when it could just as easily have been HTML's fault. This is why it is especially important to always validate your HTML file first before focusing too much on your CSS. Learn more about validating using the W3C's Markup Validation Service here.
+
+$$$
+12. Failing to See Things from the Perspective of Your Audience
+Not every visitor will be viewing your page using the same kind of device, with the same display, or even with the same browser technology, and being able to account for this aspect alone will separate the seasoned developer from the ranks of novices. Many designers employ bug testing via a suite of viewports, device emulators, browser brands and versions, and other techniques. Developers will further compose their CSS with media breakpoints to provide a contingent of solutions. 
+
+$$$
+
+MODULE 4.  Dynamic Login Forms and Debugging Code
+Learning objectives: 
+~~Add CSS to a login form
+~~Differentiate between classes and IDs
+~~Debug basic HTML and CSS code
+
+SUBMODULE A. Structuring a Login Form with CSS <Template-blank>
+Watch and follow along with the following tutorial video to create an interactive login form.
+VIDEO~~Creating a Login Form Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/ffbbed8a-abbd-4a2d-b228-fb8f0bd0faa3/login_1.mp4
+(page 103)
+
+Note: This login form will not actually allow a login as that would require our files to be set up and configured on a server. This tutorial focuses on the front-end design.
+Once you've completed creating a login form, add it to your GitHub account. Then, send a link to an Instructor for viewing.
+
+$$$
+
+Knowledge Check
+
+div { color: green; }
+div.square { color: blue; }
+.square { color: red; }
+
+Suppose there is a web page with several divs and the above CSS rules. Also, one div has a class name of “square.” Which of the following will be the displayed font color?
+^^Green
+^^Blue (CORRECT)
+^^Red
+^^None of the above  
+
+$$$
+
+SUBMODULE B. Adding Style and Responsiveness to the Login Form <Template-blank>
+
+Watch and follow along with the following tutorial video:
+VIDEO~~Creating a Login Form Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/97a83262-4132-43f1-a4a4-4b9d18d8a660/login_2.mp4
+(page 104)
+
+$$$
+
+Knowledge Check
+
+True or false? The :focus CSS selector is triggered when the user taps on or clicks on the element, usually the <input>. TRUE
+
+$$$
+Watch and follow along with the following tutorial video
+VIDEO~~Creating a Login Form Part 3~~https://ttamediaservices-uswe.streaming.media.azure.net/bbeb0837-bd11-4114-9944-3619930e2c6e/login_3.mp4
+(page 105)
+
+$$$
+
+Knowledge Check
+
+@media (max-width: 500px) {…}
+
+True or false? CSS inside the above media break applies to pages being viewed on a browser or device with a maximum width of 500px. TRUE
+
+$$$
+
+SUBMODULE C. Classes vs. IDs
+Classes vs. IDs
+We will now discuss some important differences between classes and IDs.
+To start, browsers render both classes and IDs the same way. Neither is necessary, but both have very specific uses. Adding classes and IDs does nothing inherently to an element. Each element can only have one ID, whereas any element can have any number of classes applied to it.
+IDs must be unique to a page, yet the same class can be used on multiple elements. So if multiple objects need the same styling, then a class must be used. For example, a website with a “3-column layout” may want the same styles applied to each column:
+<div class=”column”></div>
+<div class=”column”></div>
+<div class=”column”></div>
+But what if one of the columns needs to be bigger? Simple — just add another class:
+<div class=”column bigger”></div>
+In the end, IDs and classes are exactly what they sound like. An ID is an unique identifier, like a person’s full name: Jack Robert Shepard. Classes are like the descriptors associated with that person: “doctor”, “tall”, “male”, “brown haired.” Other people could have any or all of those descriptors, but hopefully no one else in the area has that same full name.
+IDs can also be used for “hash values” in URLs. The link #sectiononclasses will automatically scroll to the section of the page where there is an element with the ID = "sectiononclasses".
+
+$$$
+
+SUBMODULE D. Debugging Code
+
+Assignment
+The code below has the following errors:
+1. The light-blue background color is not displaying correctly.
+2. The heading is not displaying properly.
+3. The title element is not functioning correctly.
+4. The paragraph "I am a bold student of AOLCC" needs to be bolded.
+5. The URL to AOLCC’s website is not functioning correctly.
+6. The AOLCC logo is out of proportion. It should be resized with a width of 600px and a height of 300px.
+7. The AOLCC logo needs to display a red, dashed border, two pixels in thickness.
+8. The heading 3 element "Have you seen AOLCC's Student Orientation video?" is not centered correctly.
+9. The embedded Youtube video isn't displaying.
+
+Fix this code so it operates correctly and submit the code below. 
+Here is the code you have to work with:
+
+<html<
+<header><titled>This is the Title</titled><header<
+<body style="background-color=light blue;"<
+<font color="darkblue"<
+<h1<This is the Heading 1</h1<
+<h2<This is the Heading 2 element</h2<
+<p<<strong<</strong<I am a bold student of AOLCC.</p<
+<p<<a href="learncodinganywhere.com/"< This is AOLCC's website.</a<</p<
+<img
+src="https://www.learncodinganywhere.com/images/tech_logo/The%20Tech%20Academy%20Logo.png"
+alt="The Tech Academy Logo" width=(1200px); height=(400px)<
+<h3<<centered<Have you seen the myAOLCC Learning Hub Orientation video?</centered<</h3<
+<iframe width="560" height="315" "https://coursevideos.blob.core.windows.net/html-css/introduction to the HTML and CSS course(revised).mp4?sp=r&st=2018-06-21T19:45:45Z&se=2025-06-22T03:45:45Z&spr=https&sv=2017-11-09&sig=ryGk%2Bp05CiCIRTc5yJ7DnQqgk7J8uq%2F1spJjq9D2MOE%3D&sr=b" frameborder="0"
+allowfullscreen<</iframe<
+< /body<
+</html<
+
+
+$$$
+
+Upgrading Your HTML Website with CSS
+
+Earlier in this course you created a one-page HTML web page that was an “account creation” page for a hypothetical photo viewing website. You will now enhance this website with CSS. 
+
+As with the earlier assignment, this is meant to be a rapid exercise. Do not spend a lot of time on this assignment because you will be making a portfolio website for yourself later in this course. 
+
+NOTE: It is important that you retain your code because you will be adding more functionality in the JavaScript Course.
+
+$$$
+
+Assignment
+
+Step 1
+
+Use CSS to set these properties for the form on your page:
+
+~~Width of the inputs
+~~Margin between the inputs
+~~Border of the inputs
+~~Border radius of the inputs
+
+Step 2
+
+Use CSS to set these properties for the text in the description part of your page:
+~~Font family
+~~Font size
+
+Step 3
+
+Create an external .css file in the same directory as your web pages. Move your CSS style rules from the internal style sheets in the <head> of the documents to the external CSS stylesheet you just created. Link your web pages to that external CSS file. Remove the internal <style> tags from your pages. Verify the CSS is being applied correctly from the external CSS file.
+
+Step 4
+
+Push the CSS code and updated web pages to your GitHub account.
+
+Step 5
+
+Send the GitHub link containing all your CSS code to your Instructor.
+
+$$$
+
+MODULE 5. Bootstrap
+
+SUBMODULE A. How Bootstrap Works	<Template-blank>
+Learning Bootstrap 4
+Bootstrap allows developers to build their projects quickly without spending a lot of time writing and designing custom HTML and CSS, while still ensuring cross-browser and multiple viewport compatibility. The Bootstrap framework was originally built by Twitter developers and it is now one of the most popular open-source, front-end frameworks in use.
+Bootstrap offers preconfigured HTML5, CSS, themes, UI components, built-in media breakpoints, and content layout styles, including JavaScript modals and other menu dropdown features. Bootstrap provides a cross-platform and responsive compatibility over most viewports.
+Additionally, Bootstrap provides visibility and accessibility control such as element floating, sizing, centering, and preconfigured class codes for common compatibility layouts. Bootstrap and the Bootstrap community can take advantage of these preconfigured class codes to produce and share example snippets and a large code repository.
+It is fairly easy to get started developing your projects with Bootstrap. All you need to do is supply links to the dependency files. Click the link below. These may be files downloaded and hosted by your own servers or by providing Bootstrap's Content Delivery Network (CDN) links within your project .html files.
+<Note>
+Note: For many libraries like Bootstrap, there will be many different versions in circulation. When following a tutorial, it is important to pay attention to the version, and then mirror that until you get it working. You can then upgrade from there to see if it still works. The link below is to Bootstrap v4.0.0-alpha.6, as this is the version that is used for these tutorials.
+VIDEO~~Bootstrap download and CDN~~http://v4-alpha.getbootstrap.com/getting-started/download/#quick-start
+
+
+$$$
+
+There are handy libraries and package managers available to get you started quickly with coding your projects. These include plug-ins for MS Visual Studio NuGet, RubyGems, etc.
+Bootstrap 4, leverages CSS extensions such as Normalized.css and Reboot to ensure better cross-browser consistency. For customized front-end design, Bootstrap 4 affords front-end developers with custom CSS script inclusion. To easily quick start your projects, Bootstrap provides a basic html template with the CDN links included:
+VIDEO~~Basic Bootstrap 4 template.~~http://v4-alpha.getbootstrap.com/getting-started/introduction/#starter-template
+
+$$$
+The Bootstrap Container
+The most basic layout component in Bootstrap 4 is the "container" class. You can place all of your other page content within the container class.
+By default, Bootstrap's rows can display up to 12 columns per row. In the default configuration, Bootstrap's columns will automatically appear stacked on top of each other at the extra-small breakpoint range.
+VIDEO~~Bootstrap 4's sizing control employs the CSS "rem" unit value. According to the W3C documentation, "rem" stands for “root em” and is relative to the html (root) font-size. This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px).~~https://www.w3.org/TR/css-values-3/#font-relative-lengths
+VIDEO~~W3C documentation~~https://www.w3.org/TR/css-values-3/#font-relative-lengths
+
+The CSS rem unit produces responsiveness, scalability, improved reading experience, and greater flexibility when defining components.
+
+$$$
+The following is a handy px-to-rem conversion chart:
+PIXEL UNIT / REM UNIT
+10px =	0.625rem
+12px =	0.75rem
+16px =	1rem (root)
+14px =	0.875rem
+18px =	1.125rem
+18px =	1.125rem
+20px =	1.25rem
+24px =	1.5rem
+30px =	1.875rem
+32px =	2rem
+Are you ready to begin learning and mastering the power of Bootstrap? Start by reading the current documentation, watch the following video tutorial series, then practice, practice, practice.
+<Note>
+Note: As with most programming languages, Bootstrap's syntax may evolve and, therefore, some syntax may vary from what is depicted in the video. Always reference the developer documentation to ensure proper syntax and usage.
+
+$$$
+
+SUBMODULE B. Using Bootstrap to Create a Responsive Website
+
+Assignment
+Download the zipped tutorial files from the following link:
+VIDEO~~Project Files~~https://thetechacademy.azureedge.net/htmlandcss/project_cinema.zip
+
+$$$
+
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Basic Bootstrap 4 Part 1~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_remake2019_pt1.mp4
+(page 112)
+
+
+$$$
+
+Knowledge Check
+
+True or false? Bootstrap dependencies include jQuery and Popper.js. True
+ 
+$$$
+
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Basic Bootstrap 4 Part 2~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_remake2019_pt2.mp4
+(page 113)
+
+$$$
+
+Knowledge Check 
+
+True or false? Bootstrap will require you to create an additional custom CSS file that targets the elements you want. FALSE
+
+$$$
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Basic Bootstrap 4 Part 3~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_remake2019_pt3.mp4
+(page 114)
+
+$$$
+
+Knowledge Check 
+
+True or false? Bootstrap styling will work regardless of whether the class names are correct. TRUE
+
+$$$
+
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Basic Bootstrap 4 Part 4~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_remake2019_pt4.mp4
+(page 115)
+
+$$$
+
+Knowledge Check
+
+True or false? Bootstrap has built-in functionality to make elements responsive. TRUE
+
+$$$
+
+SUBMODULE C. Using Additional Bootstrap Features to Enhance the Site
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Basic Bootstrap 4 Part 5~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_remake2019_pt5.mp4
+(page 116)
+
+$$$
+
+Knowledge Check
+
+True or false? Semantic HTML tags like <form>, <main>, <footer>, etc. should not be used in conjunction with Bootstrap. FALSE
+
+$$$
+
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Basic Bootstrap 4 Part 6~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_remake2019_pt6.mp4
+(page 117)
+
+$$$
+
+Knowledge Check
+
+True or false? Applying Bootstrap rules is easy — simply look up the class name for a specific effect or style and include it in the target element. True
+
+
+$$$
+
+Knowledge Check
+
+True or false? Bootstrap syntax is constant and backwards-compatible so coders need not pay attention to version number. FALSE
+
+$$$
+
+Assignment
+
+VIDEO~~Bootstrap documentation page: https://getbootstrap.com/docs/4.0/getting-started/introduction/~~https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Download the starter code and images for this assignment from here:
+https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_project.zip
+
+Your client, a movie theater, would like you to add a Bootstrap 4 card-deck widget to neatly showcase each movie that is showing. 
+
+You will need to go to the Bootstrap 4 website, read the documentation to familiarize yourself with the code, and then supplement your existing HTML document (in starter code) with Bootstrap styling. 
+
+VIDEO~~Bootstrap documentation page: https://getbootstrap.com/docs/4.0/getting-started/introduction/~~https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Download the starter code and images for this assignment from here:
+VIDEO~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_project.zip~~https://thetechacademy.azureedge.net/htmlandcss/bootstrap4_project.zip
+
+Some useful advice: on the Bootstrap documentation page, use the menu guide at the side of the page to locate and navigate to the “Card” component. Read the documentation and examples and then port over the code snippet for “Card Decks” to enhance your page. Obviously you will need to make some changes to your code to make the snippet work with your code base. This is part of the challenge of this assignment. 
+
+More instructions: Locate the <img> tags and edit the src attributes appropriately to show the movie images for each card. Then locate the <div> tags that have been assigned a class name of “card-body” and rename them to “card-block”. 
+
+Next, in the <h5> tags with class name “card-title” replace the movie title text with the following:
+~~Kong Skull Island
+~~Ghost in the Shell
+~~Beauty and the Beast
+
+Also, in the <p> elements with class name “card-text”, replace the paragraph texts with the following movie descriptions:
+~~A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.
+~~In the near future, Major Mila Killian is the first of her kind: a human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world’s most dangerous criminals. 
+~~A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a woman he keeps as prisoner. 
+
+Next, go back to the Bootstrap documentation and navigate to the section on “Badge” components. Read about “pill badges” — you will be implementing them in your page using the “info” color scheme. 
+Go back to your academy_cinemas.html file and in the <p> elements, remove the nested <small> tag. Paste five copies of the pill-badge snippets inside each card, and replace the badges’ inner text to list the movie show times:
+~~1:00pm
+~~3:00pm
+~~5:30pm
+~~7:00pm
+~~9:30pm
+
+Included in the zip file you downloaded for this project is an example of what your finished product should look like. 
+
+Once completed, upload your code to GitHub and send the link to your Instructor.
+
+$$$
+
+Watch the following video:
+VIDEO~~HTTP~~https://drive.google.com/open?id=1bBO2WxktT_A2RYBFxvFvpnrk_q5I1Ipx
+
+
+$$$
+
+Knowledge Check
+
+HTTP methods or verbs include but are not limited to
+^^GET
+^^POST
+^^DELETE
+^^All of the above CORRECT
+
+$$$
+
+MODULE 6.  File Transfer Protocol (FTP)
+Learning objectives: 
+~~Utilize File Transfer Protocol
+~~Utilize Filezilla
+~~Create dynamic HTML and CSS, and push it live to the Internet
+
+SUBMODULE A. Understanding the Fundamentals of FTP	<Template-blank>
+File Transfer Protocol
+A protocol, as it is related to the computer industry, is an agreement of how data will be sent between two devices or computers. The agreed-upon rules define how the data is packaged and unpacked and whether that particular data will be encrypted during transmission.
+There are many protocols, serving different purposes but this article will be focusing on just one in particular — the File Transfer Protocol (FTP). As the name implies, FTP relates to how files are sent between two computers —  more specifically, between a client PC and a remote server.
+FTP is commonly employed by web hosts and web developers. As web developers construct their content they will need to store those files on a public-facing server. This means that anyone will be able to type in the Uniform Resource Locator (URL), which is the specific address or path to those files.
+Most web developers’ clients do not possess the hardware or resources to maintain a web server required to host their own content but instead lease the services from another company that specializes in this particular business. This particular company is termed a web host. The web host has taken the responsibility and liability to maintain a very powerful server computer with vast amounts of hard drive space and has accepted the responsibility to ensure networking security of that data.
+The web developer will design the web content and transfer their files via the FTP to the host’s server for storage at a designated address. This address typically consists of an Internet Protocol (IP) address and a port number determined by the host.
+The developer uses software to perform all of the addressing and FTP processes. That software is referred to as an FTP Manager and there are many different flavors of FTP Manager to choose from. One popular freeware version of file manager software is called FileZilla.
+The following video will walk you through the intricacies of FileZilla’s installation, setup, and basic usage. With this software, you will be able to code your web content on your local pc and then harness the FTP to store your files on a remote host server for public access of your content. (Click 'Next' for video)
+
+$$$
+
+SUBMODULE B. Utilizing FTP Through the Filezilla Application
+Assignment 
+The following video will walk you through the intricacies of FileZilla’s installation, setup, and basic usage. With this software, you will be able to code your web content on your local pc and then harness the FTP to store your files on a remote host server for public access of your content.Watch the following video in full:
+Watch the following video in full. Follow along, performing the same actions on your computer.
+VIDEO~~Learning FTP and Filezilla~~https://ttamediaservices-uswe.streaming.media.azure.net/0444dee6-8880-4749-8d51-ffdf19ef89e9/FTP_with_Filezilla.mp4
+$$$
+
+Knowledge Check
+
+True or false? File Transfer Protocol (FTP) is equivalent to Hypertext Transfer Protocol (HTTP). FALSE
+
+$$$
+
+Using Filezilla to Upload Your Content
+Watch the video and learn to appropriately configure FileZilla and connect to The Tech Academy's server. The video will instruct you to connect to the school's server; within the directory named "drill," upload a text file with your first and last name. Let your Instructor know once this has been completed.
+The purpose of this particular drill is to demonstrate how you can use an application that harnesses FTP to upload files from your local hard drive to a remote server. This knowledge is very useful for web developers, as they can work with their files offline on their own computer and then publish their finished content to a web server.
+If you are having trouble connecting to the server with the settings shown in the video, please try the following: while in the site manager, select the "transfer settings" tab, under the "transfer mode.", mMake sure "active" is checked. Save the settings and try to connect again.
+VIDEO~~Configure FileZilla and connect to The Tech Academy's server~~https://ttamediaservices-uswe.streaming.media.azure.net/7b28558c-a5c8-47b8-adc0-60d3656a7d8e/FTP_drill.mp4
+
+$$$
+
+SUBMODULE C. Producing a Personal Portfolio Website
+Assignment
+You will now build your own personal portfolio site. A personal portfolio site is for showcasing your development work and giving prospective employers a landing page where they can contact you. Using a pre-built theme for a personal portfolio site is an accepted practice among full-stack software developers. It is recommended that you use one here.
+^^Review the following example websites from recent graduates:
+##Jeff Luxmore
+##Cody Landry
+
+^^Review this web page in full: Instructions for Using GitHub.IO
+
+You should limit your time on this. This is a website you will be expounding and improving on as you progress throughout the curriculum. At this point, there is no need to make it perfect. However, you will eventually show this to future employers — so remember to make it look as professional as possible.
+This website should be uploaded to GitHub as a repository named: "[your GitHub username].github.io"
+For example, if your GitHub Username is "drjackshephard," then you would save your personal portfolio repository as "drjackshephard.github.io".
+Following these instructions correctly will provide you with free hosting for your site. Unless GitHub removes this feature, your personal portfolio site should be publicly viewable at: [your GitHub username].github.io
+Besides looking professional, your portfolio site should contain your name, links to your LinkedIn and GitHub, and whatever other contact information you wish to provide. It isn't necessary to include your phone number and email. 
+
+Additionally, your portfolio needs to have some sort of framework to showcase current and future coding experience and projects. This framework should allow you to expand the sections with relative ease as you progress through the course.
+
+NOTE: For help creating your content on your site, please contact your Job Placement Director. For any technical help, please contact an Instructor.
+When you have completed this step, please submit your github.io web address to an Instructor for review.
+
+$$$
+
+NOTE: The following two assignments will be converted into a video tutorial. 
+
+Optional Assignment: Creating a Custom Domain for Your Portfolio Site
+
+This assignment is not a requirement, but it is considered more professional to reference a custom domain name for your personal portfolio site. So instead of "drjackshephard.github.io," prospective employers could be directed to your portfolio with the more professional appearing URL “drjackshephard.com”.
+If you elect to create a custom domain name, the first step is to purchase and register your domain name. The simplest way to do this is to purchase from GoDaddy.com. An average cost for a custom domain name is approximately $9.99/year. There is no need to purchase any additional add-ons at this time.
+If you have elected to purchase your custom domain name, perform the following steps to attach your new domain name to your GitHub.IO address:
+1. Find "Custom Domain" and change it to the domain name you purchased.
+2. Navigate to dcc.godaddy.com/manage and locate your domain name. Click the gear icon and click "Manage DNS".
+3. Under the heading "Records," find the entry with Type: "CNAME" and Name: "www". Click edit.
+4. Change the Value to your github.io address.
+5. Under the heading "Records", find the entry with Type: "A" and Name: "@". Click edit.
+6. Change the value to: 192.30.252.153.
+7. Click Save.
+8. Now at the bottom of the Records table, click Add.
+9. Select Type "A" and make the Host "@" and set the Points to "192.30.252.154". Click Save.
+10. Wait a few minutes, sometimes up to an hour, and test that your custom domain points to your github.io address.
+Congratulations! You should now have a custom domain that you can proudly use to promote your professional portfolio site.
+$$$
+
+Optional Assignment
+
+Now that you have your own portfolio website, you can purchase business cards to promote yourself as a software developer. For those interested in working as a developer, these cards will allow you to begin networking and promoting yourself now.
+
+There are many companies you can check out for pricing, such as vistaprint.com and Office Depot. We recommend purchasing 250 cards. It is not advisable to purchase more than that because these cards may need to be changed in the future. 
+
+Your business card should include the following:
+Your name
+Your title (Software or Web Developer)
+Your phone number
+Your email address
+On the back of your business card, include the following:
+Your personal portfolio site
+Your GitHub address
+Your shortened LinkedIn address
+
+$$$
+
+Assignment
+Write an essay answering the following questions: 
+How can you utilize HTML and CSS in your career as a software developer? 
+Why are the languages and technologies covered on this course important knowledge for any developer? 
+Submit your essay in the space below.
+
+$$$
+Final ExamASSIGNMENTS:
+
+1.    True or false? FTP clients require that the same software be running on the server handling requests. FALSE
+2. 	Which of the following are valid ways of declaring color values in CSS?
+ 	1.     HTML/CSS color name (e.g. red, blue, yellow, magenta)
+ 	2.     Hex Code (e.g. #abc123)
+3.     Decimal Code (e.g. rgb(5,100,34))
+4.     All three are valid CORRECT
+3. 	Which of the following statements is correct?
+1. 	HTML code needs to be properly indented for browsers to display correctly
+2. 	The body element cannot have an ID attribute
+3. 	There can be multiple CSS files to target and style a single HTML page
+CORRECT
+4. 	A div element may contain any other HTML element nested inside it
+4. 	Which of the following CSS code snippets is different from the rest?
+1. 	margin: 1px 2px 1px 2px;
+2. 	margin: 1px 2px;
+3. 	margin-top: 1px; margin-bottom: 1px; margin-left: 2px; margin-right: 2px;
+4. 	All three above are equivalent CORRECT
+5.     Which of the following CSS code snippets are equivalent (i.e. target the same divs) given the HTML below?
+<div>...<div>
+<div>...<div>
+<div>...<div>
+<div>...<div>
+<div>...<div>
+1. 	Div:nth-child(2n)
+2. 	div:nth-child(even)
+3. 	div:nth-of-type(even)
+4. 	All are equivalent CORRECT
+6.     What will be the effect of the following CSS?
+.container:hover {
+        	color: red;
+}
+ 
+.container:hover {
+        	color: black;
+}
+ 
+1. 	Text inside the .container element will turn red when the user hovers over it
+2. 	Text inside the .container element will turn black when the user hovers over it CORRECT
+3. 	The contradicting rules will result in an error and the HTML will not be displayed properly
+4. 	On hover, the .container element will turn red at first, and turn black on hover the rest of the time.
+ 
+7.     div { background-color: white; font-size: 10px; transition: background-color 0.5s, font-size 1s;}
+div:hover { background-color: black; font-size: 20px;}
+The above CSS code will make it so that:
+1. 	If the user hovers over a div, it and all other divs in the HTML document will change background color from black to white in 0.5s and change font-size from 20px to 10px in 1s
+2. 	If the user hovers over a div, it and all other divs in the HTML document will change background color from white to black in 0.5s and change font-size from 10px to 20px in 1s
+3. 	If the user hovers over a div, only it, and its parent div will change background color from white to black in 0.5s and change font-size from 10px to 20px in 1s
+4. 	If the user hovers over a div, only it will change background color from white to black in 0.5s and change font-size from 10px to 20px in 1s CORRECT
+8.     True or false? The keyframes CSS rule defines animation sequence that is invoked by the animation rule. TRUE
+ 
+9.     Which of the following is true regarding the position property in CSS? It is recommended that you spend a few minutes to research this topic and understand its properties.
+1. 	The child element inherits the same property as its parent, unless otherwise specified.
+2. 	position: relative; implies that the position will be relative to the element’s location had the position been “fixed”
+3. 	For the position property, “fixed” and “absolute” are equivalent attributes.
+4. 	The default position value is “static” TRUE
+ 
+10.  True or false? In an <img> element, overflow: hidden; results in undisplayed content to be hidden behind a scroll bar. FALSE
+ 
+11.  div {
+        	transition-property: background-color;
+        	transition-duration: 1s 2s 3s 4s; }
+ 
+The above CSS instructs the browser to set the transition duration of the background-color property to
+1. 	1s CORRECT
+2. 	2s
+3. 	3s
+4. 	4s
+ 
+12.  True or false? The CSS flex-box layout allows for more responsive web design; it gives HTML elements the capability to rearrange themselves based on the size of the screen or window. TRUE
+13.  True or false? h1::after is an example of a pseudo-element whose default display property is set to inline. TRUE
+ 
+14. True or false? In CSS the background rule can only point to an image in the local directory and not a resource on another server. False
+ 
+15.  True or false?
+transition: color 1s linear 2s; is equivalent to the lines of CSS below.
+transition-property: color;
+timing-function: linear;
+transition-duration: 1s;
+transition-delay: 2s;
+TRUE
+ 
+16.  True or false? CSS code pertaining to animations must always be on a separate file or else it will not display properly. FALSE
+ 
+17.  True or false? Border color in CSS must always be specified in hex. FALSE
+
+18.  True or false? It is considered best practice to validate your CSS code often and preferably on W3C or a similar service to ensure that it compiles properly on all devices. TRUE
+ 
+19.  div { color: green; }
+div.square { color: blue; }
+.square { color: red; }
+ 
+Suppose there is a web page with several divs and the above CSS rules. Also, one div has a class name of “square”; which of the following will be the displayed font color?
+1. 	Green
+2. 	Blue (CORRECT)
+3. 	Red
+4. 	None of the above  
+ 
+20.  True or false? The :focus CSS selector is triggered when the user taps on or clicks on the element, usually the <input>. TRUE
+ 
+21.   
+@media (max-width: 500px) {
+…
+}
+ 
+True or false? CSS inside the above media break applies to pages being viewed on a browser or device with a maximum width of 500px. TRUE
+ 
+22.  True or false? Bootstrap dependencies include jQuery and Popper.js. True
+ 
+23.  True or false? Bootstrap will not function if there is a custom CSS file that targets the same elements. FALSE
+ 
+24.  True or false? Bootstrap will work regardless of whether the class names are correct. TRUE
+ 
+25.  True or false? Bootstrap has built-in functionality to make elements responsive. TRUE
+ 
+26.  True or false? Semantic HTML tags like <main>, <footer>, etc. should not be used in conjunction with Bootstrap. FALSE
+ 
+27.  True or false? Applying Bootstrap rules is easy — simply look up the class name for a specific effect or style and include it in the target element. True
+ 
+28.  HTTP methods or verbs include but are not limited to
+1. 	GET
+2. 	POST
+3. 	DELETE
+4. 	All of the above CORRECT
+ 
+29.  True or false? File Transfer Protocol (FTP) is equivalent to Hypertext Transfer Protocol (HTTP). FALSE

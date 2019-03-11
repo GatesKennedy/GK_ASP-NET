@@ -1,0 +1,55 @@
+function extractLinkUrls() {
+  var body = DocumentApp.getActiveDocument().getBody();
+  var numChildren = body.getNumChildren();
+  var output = [];
+  Logger.log("numChil: " +numChildren);
+  // Walk through all the child elements of the body
+  for (var li=0; li<numChildren; li++) {
+    Logger.log("=====LINE LOOP: " + li);
+    var line = body.getChild(li).asText();
+    if (line.getType() == DocumentApp.ElementType.PARAGRAPH) {
+      var textObj = line.editAsText();
+      var text = line.getText();
+      var inUrl = false;
+
+      
+      for (var ch=0; ch < text.length; ch++) {
+        //Logger.log("==Char Loop: " + ch);
+        //==========
+        var url = textObj.getLinkUrl(ch);
+        //==========
+        if (url != null) {
+          Logger.log("Cond: URL = NotNull");
+          if (!inUrl) {
+            Logger.log("vv  inUrl == FALSE");
+            // We are now!
+            var curUrl = {};
+            inUrl = true;
+            output.push(url);
+            var beenThere = line.editAsText().findText('!!!')  ;
+            if (beenThere == null){
+              line.insertText(ch, "!!! Video: " + url + "!!! \n");
+            }
+          }
+          else {
+            Logger.log("Cond: InURL = FALSE");
+            curUrl.endOffsetInclusive = ch;
+          }          
+        }
+        else {
+          Logger.log("Cond: URL == NULL");
+          if (inUrl) {
+            Logger.log("    InURL = TRUE")
+            // Not any more, we're not.
+            inUrl = false;
+            curUrl = {};
+          }
+        }
+      }
+    }
+  }
+  var html = output.join('\r');
+  Logger.log(html);
+  //emailHtml(html, images);
+  //createDocumentForHtml(html, images);
+}             

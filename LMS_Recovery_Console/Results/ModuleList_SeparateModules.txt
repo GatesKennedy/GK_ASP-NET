@@ -1,0 +1,533 @@
+======  MODULE 1  ======
+======  page 1  ======
+$$$$$$$  MODULE 0  $$$$$$$
+======  page 2  ======
+^G^ MODULE 2.  HTML Fundamentals
+^G^ Learning objectives:
+%%^G^ Understand HTML elements
+%%^G^ Create basic HTML templates
+%%^G^ Describe the basic anatomy of HTML
+======  page 3  ======
+^G^ SUBMODULE A. HTML Anatomy
+======  page 4  ======
+======  page 5  ======
+Anatomy of HTML
+Hypertext Markup Language (HTML) is used to instruct browsers on how to present content to the user’s screen. The open and closed tags used in HTML denote web elements. Each element works together to form a web document, and a web browser like Chrome or Firefox is required to parse and display the HTML and JavaScript as intended by the author.
+HTML can be further enhanced when teamed with other web-related languages — most commonly, Cascading Style Sheets and JavaScript.
+The standards of HTML are governed by The World Wide Web Consortium (W3C) which is a group of individuals and organizations that work together to create standards for the World Wide Web.
+Tags
+HTML utilizes tags. Tags are how the markup of the content in an HTML document is specified.
+Tags are special instructions placed before and after the content. Using tags, another program can tell the difference between the instruction and the content, and can then present the content in the manner specified by these tags.
+Tags usually have two parts: an opening tag and a closing tag. The content goes between these two tags.
+Opening tags are written as a “less than” angle bracket (<), followed by the markup instruction, followed by a “greater than” angle bracket (>).
+An example would be the tag used to make text bold. The actual instruction is the word “strong,” meaning “make the text controlled by this tag stand out,” usually by making it bold. The opening “strong” tag looks like this:
+Of course, you need to specify a closing tag, so the computer program knows when to stop making text bold. That’s where the closing tag comes in. Closing tags use the same instruction as the opening tag, but with a forward slash (/) placed before the instruction.
+The closing “strong” tag looks like this:
+Putting all the parts together, if you wanted to emphasize the word “best” in the sentence “The best football team is the New Orleans Saints,” you would write the HTML like this:
+The best football team is the New Orleans Saints
+The output looks something like this:
+<img src="cid:IMAGE_0.png" />
+Since there is often a need to format content within other tags, the tags can be "nested," meaning one tag can include other tags.
+Here’s an example of HTML where tags are nested within other tags:
+<div>
+<h1>Nested divs</h1>
+<p>Nested divs are a common feature in HTML</p>
+<p>In this example, the heading and paragraph elements are nested within the div element.</p>
+</div>
+Nested tags are used extensively to achieve very specific formatting goals. For a real example, inspect Google. If you’re using Chrome, go to google.com, right-click anywhere on the page, click Inspect and make sure you’re on the Elements tab. You’ll be able to view the HTML source code for this page and see several examples of nested elements, especially divs.
+======  page 6  ======
+Elements
+The tags and the code written between them are called “elements.” Here is a diagram that shows this:
+<img src="cid:IMAGE_0.png" />
+======  page 7  ======
+Clearing the Browser Cache
+Sometimes when you are using the web browser to view web pages the content may not appear or function as it was intended. In these instances, your browser does have some features that can try to correct these errors. But first, let's try to understand what is occurring “under the hood.”
+Whenever you enter a Uniform Resource Locator (URL) into the browser's address bar, you are essentially making a request for a specific file to the web server that is hosting the website. This file may be a Hypertext Markup Language (HTML) document, image, video file, or even a combination of files.
+Unfortunately, this process often takes time because while a browser is loading content, it often downloads many other files to reconstruct the web page. To reduce the loading time for future visits, the browser may store these pages in its memory as snapshots. This action is called "caching" and each snapshot is a "cache" file. The next time you visit the same website, your browser may attempt to load up the cached files and skip some of the file downloading, effectively reducing the loading time.
+Sometimes, however, the browser's cache files may become corrupted or non-functional. Fortunately, most browsers provide a method to clear the cache. This will force the browser to download a new version of the file and this will often correct the error.
+======  page 8  ======
+Please Watch the Following Video
+VIDEO~~Clearing the Browser Cache~~https://thetechacademy.azureedge.net/htmlandcss/clear_browser_cache.mp4
+======  page 9  ======
+Creating an Element
+To define an element in an HTML document, we need to use an opening and closing tag. For example: to create a paragraph, we would write:
+<p> This is a paragraph. </p>
+Which would simply display:
+This is a paragraph.
+If we fail to include either the opening or the closing tag for our element, we will create errors within the document. There are exceptions to this rule; there are a few elements that do not require closing tags. However, for the sake of simplicity, we will assume all tags require a closing tag.
+======  page 10  ======
+Knowledge Check
+^^Which of the following is an element?
+##<p>This is a paragraph.</p> CORRECT
+##<p>
+##</p>
+##This is a paragraph.
+======  page 11  ======
+======  page 12  ======
+^G^ SUBMODULE B. Understanding HTML Elements
+======  page 13  ======
+======  page 14  ======
+HTML Structure
+The first thing you will need to understand in the HTML structure is the <!DOCTYPE html> declaration. This is an instruction to the browser that states the version of HTML being used. As of October 2018, HTML5 is the latest version. In the HTML document, the code <!DOCTYPE html> tells the browser that the code that follows is written in HTML5.
+Please note that in HTML5 there is no need to specify the version number explicitly. Also, the <!DOCTYPE html> declaration is not a tag — it is an instruction to the browser.
+There are different doctype declarations for earlier versions of HTML and for other web development languages.
+======  page 15  ======
+Using Elements to Create an HTML Page
+The first tag contained in an HTML document is the <html> tag. The document is closed with the closing html tag </html>. These tags are required to produce a web page — the text and markup tags placed between the <html> and </html> tags form the overall web page.
+Note: you can specify the language being used in your code within the <html> tag. For English, you would write: <html lang= “en”>
+Virtually any language can be specified this way. For example: Spanish is abbreviated “es” and French is abbreviated “fr.”
+To apply what we’ve covered so far, we’d write our HTML code as follows:
+<!DOCTYPE html>
+<html lang=”en”>
+<p>This is a paragraph.</p>
+</html>
+======  page 16  ======
+Metadata
+“Meta” comes from the word “beyond.”
+Metadata is data that gives information about, or describes, other data. Simply put, metadata means: data about data.
+In HTML, the <meta> tag is usually used to convey data to browsers and search engines; this metadata isn’t displayed to the user.
+Meta elements can be used to describe pages, provide keywords to help categorize the type of information in the content of the page, note the author of the document, and more.
+======  page 17  ======
+Body and Title Elements
+The <body> element is used to house all of the content (text, images, links, videos, etc.) in an HTML document. The body of an HTML document is contained within the <body> and </body> tags.
+The title element is where you write the title of the document (between the <title> and </title> tags).
+Example:
+The following  HTML code:
+<!DOCTYPE html>
+<html>
+<title>This is the title</title>
+<body>This is the body</body>
+</html>
+would be displayed as follows in a browser:
+<img src="cid:IMAGE_0.png" />
+======  page 18  ======
+Head Elements
+The <head> element is a container for metadata pertaining to the HTML document itself, and should be placed between the opening <html> tag and the opening <body> tag.
+Head elements can contain:
+^^Titles
+^^Scripts (code that automates a task, so that a multi-part task can occur without the developer’s involvement)
+^^File attachments (such as CSS, JavaScript or even custom fonts)
+^^Character encoding
+^^Metadata
+======  page 19  ======
+Body Elements
+The content placed between <body> and </body> make up all of the page content. This can consist of nearly anything the developer can dream of, such as embedded video, images, text, animation, table of data, advertisements, and even music. The sky’s the limit, but within the body tag is where you'll place it.
+Example:
+<img src="cid:IMAGE_0.png" />
+======  page 20  ======
+======  page 21  ======
+^G^ SUBMODULE C. The HTML Template
+======  page 22  ======
+======  page 23  ======
+The Basic HTML Template
+<img src="cid:IMAGE_0.png" />
+Glancing at the basic html example structure, you will notice that there are opening tags and, further down the page on the same indentation level, there are the corresponding closing tags.
+As you develop your HTML skills, it is good practice to use indentation.
+Although an HTML document does not require any indentation, it will certainly make your code easier to read and more manageable to work with.
+======  page 24  ======
+Header
+The <header> element represents a container for introductory content or a set of navigational links. A header element typically contains: one or more heading elements (<h1> - <h6>), a logo, an icon, etc.
+<img src="cid:IMAGE_0.png" />
+The example above shows a very simple HTML document with a header element containing all the heading elements. There are six possible heading tags — h1 through h6, with lower numbers indicating higher emphasis and larger default font size.
+======  page 25  ======
+Footer
+The <footer> tag defines a footer for a document or section. A footer element should contain information about its containing element. A footer element typically contains: authorship information, copyright information, contact information, etc. It is located towards the bottom of a webpage as in the image below:
+<img src="cid:IMAGE_0.png" />
+The footer is one of the most important parts of a web page. Its purpose is usually to provide users the contact information of the primary owner or manager of the website.
+======  page 26  ======
+Main
+The HTML <main> element represents the dominant content of the <body> of a document or portion of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document.
+Note: The <p> element in the picture below stands for paragraph. It’s used to make a paragraph in the content on a web page.
+Example:
+<img src="cid:IMAGE_0.png" />
+The “main” element designates a single containing element to enclose the main content of the page. For instance, for a blog page the main element could have the main text for a blog posting. Please note that there should be only one “main” element per HTML page.
+======  page 27  ======
+Nav
+The <nav> tags bound a set of navigation-related functionality or content. As a principle, these should link to key web pages within the overall website.
+Example:
+<nav>
+<a href="/yellow/">yellow</a> |
+<a href="/green/">green</a> |
+<a href="/red/">red</a> |
+<a href="/blue/">blue</a>
+</nav>
+The code above is a basic nav element with four “navigation links” pointing to other pages that are located on the same computer/server.
+In HTML, a link is enclosed within opening and closing tags known as anchor tags. In this example, the pages or links are given the names “yellow,” “green,” “red” and “blue.” The link address is inside the opening anchor tag, while the link names (yellow, green, red and blue) are between the opening and closing anchor tags.
+In the final rendered form on the browser, the anchor tags will be displayed as links that the user may click on to navigate to another page.
+======  page 28  ======
+Div
+The <div> tag defines a division or a section in an HTML document. The div element is often used as a container for other HTML elements to style them or make specific changes to the content within that particular div tag.
+Example:
+<img src="cid:IMAGE_0.png" />
+In the above picture, the div tag encloses a heading (h2) and a paragraph (p). The “style” inside the opening div tag is telling the browser that all text within this div should be red.
+======  page 29  ======
+Class Attribute
+The class attribute specifies one or more class names for an HTML element. The class name can be used by CSS and JavaScript to target elements and manipulate them as needed. In CSS, to select elements with a specific class name, write a period (.) character, followed by the name of the class.
+Example:
+<img src="cid:IMAGE_0.png" />
+CSS classes allow you to name a selection of code in an HTML document and then change its properties however you’d like without affecting all the code.
+To target elements by tag name, e.g. p, h1, div, etc. the period is not required.
+======  page 30  ======
+Script SRC
+First let’s define “script.” A script in HTML is a separate program/collection of code than the HTML document you are writing. The script tag commonly points to JavaScript code. The src attribute is equated to the name and location of that JavaScript file.
+Instead of repeating code for each web page, you can use the script src tag to have that program/code run whenever you want for that specific web page. The script may produce HTML itself when it runs, and that HTML will be used to create and format content on the web page.
+Example:
+<script src="myscripts.js"></script>
+The code written in “myscripts.js” will run wherever you put in your code, resulting in the creation of HTML, which is then used by the browser to create the display for the user.
+======  page 31  ======
+Anchor Tags
+The <a> tag is the HTML code used to create a link to another page. It instructs the browser to display content that links to another document (typically a web page).
+The “href” is an attribute of the anchor tag — it’s short for “hyperlink reference.” This attribute contains the name of the resource or document that the author intends to link to.
+There two kinds of href tags. One is implicit and the other is explicit. Implicit href tags are used to create a link to another web page in the same file folder as the page the <a> tag is in.
+Example:
+<a href=”example.html”> Click this link to see an example</a>
+If you have a file called example.html, when the user clicks on the text “Click this link to see an example” on your page, it takes them to that “example” page.
+An explicit href tag is used to create a link to a web page that is not located in the same folder or is on another computer altogether.
+Example:
+< a href=”https://www.google.com”>This is a link to Google’s search engine</a>
+This takes the user out of the site they are on and onto google.com.
+======  page 32  ======
+Rel Attribute
+The rel attribute specifies the relationship between the current document and the linked document. It is only used if the href attribute is present.
+Example:
+<html>
+<head>
+<link rel=”stylesheet” href=”style.css”>
+</head>
+<body>
+<h1> This is a sentence </h1>
+</body>
+</html>
+In this example, the rel tag tells the browser that the link in this code is a stylesheet (code used to style HTML). It’ll therefore style all of the code below it.
+======  page 33  ======
+Knowledge Check
+^^Which of the following is the correct definition for “script” in HTML?
+##A script is a separate program/collection of code from the HTML document you are writing. CORRECT
+##A script is a series of code that interacts with the user through other programs.
+##A script is a long written document consisting of a story, usually with dialogue and separate scenes.
+##A script is a separate program that utilizes the background data of HTML to write code for your website.
+======  page 34  ======
+^G^ Module 3. Writing Code in HTML
+^G^ Learning objectives:
+%%^G^ Write basic HTML code
+%%^G^ Install and utilize Notepad ++
+^G^ SUBMODULE A. Creating Your First HTML Page
+^G^ <Template-blank>
+======  page 35  ======
+Assignment
+In the upcoming tutorials, you will need the project files associated with the videos. Download and unzip (extract) the files here:
+NOT_VIDEO
+PROJECT~~Project Files ~~https://techacademystorage.blob.core.windows.net/htmlandcss/basic%20html%20template.zip
+This zip includes all files discussed throughout this entire tutorial and should automatically unpack to their correct directories.
+======  page 36  ======
+Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+VIDEO~~Setting Up Our Working Environment~~https://ttamediaservices-uswe.streaming.media.azure.net/1fde1002-f3a5-4e3f-95ee-6f94afbdf169/Basic%20HTML_CSS%20Series_IDE.mp4
+======  page 37  ======
+Knowledge Check
+^^Which of the following statements is correct?
+##All of the above are correct CORRECT
+##There can only be one body element — otherwise the page will not load and display properly
+##Notepad++ is an IDE
+##The CSS file does not have to be located in the same directory as the HTML file
+======  page 38  ======
+======  page 39  ======
+^G^ SUBMODULE B. The HTML Template
+======  page 40  ======
+======  page 41  ======
+Basic HTML
+Watch this video in full, following along with the Instructor and performing the same actions on your computer:
+VIDEO~~Basic HTML_CSS Series_HTML Template~~https://ttamediaservices-uswe.streaming.media.azure.net/01c6f45a-361f-4939-a7a7-c00d3e639eda/Basic%20HTML_CSS%20Series_HTML%20template.mp4
+======  page 42  ======
+Knowledge Check
+^^Which of the following tags requires a closing tag?
+##All of the above CORRECT
+##A Body tag.
+##A Header tag.
+##An HTML tag.
+======  page 43  ======
+^G^ Module 4.  Hyperlinks, Tags and Elements
+^G^ Learning objectives:
+%%^G^ Use links in HTML
+%%^G^ Use elements in creating dynamic websites
+^G^ SUBMODULE A. Creating Hyperlinks
+^G^ <Template-blank>
+======  page 44  ======
+More on HTML
+In previous sections of this tutorial, we completed the basic design of our website, but it is boring and not very aesthetically pleasing. This is because HTML is only useful for creating the basic scaffolding for a website. Rest assured, we will be making our content beautiful by leveraging CSS later in this tutorial series. For now we will concentrate on enhancing our basic design with functionality, like anchor tags and images.
+As previously discussed, HTML stands for “Hypertext Markup Language” — or “Markup” for short. Markup is merely the language a programmer can use to instruct browsers how to display web content to a user's screen.
+Typically, HTML documents are stored on public-facing servers. When a browser makes a query (a request) to access a web page, the host server delivers the requested document to the user's browser. The browser follows the instructions in the HTML to represent the content on the user's screen.
+======  page 45  ======
+Linking to Internal/External Resources
+We can link our pages together by using a built-in HTML syntax: the anchor element. Anchor elements provide the user with an indication that there are other pages to visit and, at the same time, provide the browser with another URL to query the host server with.
+We can generate an anchor element by using the open and closing anchor tags surrounding some key information, as in the following example:
+<img src="cid:IMAGE_0.png" />
+In this example, we have the open <a, the href="">, and the closing </a> anchor tag surrounding https://learncodinganywhere.com as the special URL for the browser to query the server for, should the audience elect to follow the hypertext link. Most browsers have incorporated the ability to open additional browser tabs. By placing some additional code, target="_new", we can instruct our browsers to open the URL in an additional tab. The complete code to make this happen would be:
+<img src="cid:IMAGE_0.png" />
+======  page 46  ======
+Adding Images into Our Markup
+Our content remains a little bland, so we can spice it up with images. The syntax to add images will look like the following:
+<img src="cid:IMAGE_0.png" />
+In this example, we have the open <img tag, the src="" which tells the browser that there will be a file path to follow to retrieve the image. Note that this is a self-closing tag, i.e. there is no additional closing tag to denote end of element.
+In this case (and a few other tags), the characters “/>” tell the browser that the tag ends there. The exact location of the image that this element is pointing to is defined by the src attribute, similar to the script tag.
+As mentioned in an earlier section of this series, sometimes there are exceptions to the rules, and an image tag is one of these exceptions. According to the standard set by the W3C, image tags are not required to be accompanied by closing element tags. This means that the image tag is considered a self-voiding tag and will open and automatically close without the "/" part of the tag. However, according to the W3C documentation, including the "/" is perfectly acceptable. Some developers prefer to stay consistent with all of their code and include the "/" in their image tags.
+The key thing to take away from this, is that it is important to take the time to research how to properly use the tag with the appropriate language authority so that you’re sure you are using the syntax correctly. Avoid cutting corners and failing to research, as technology evolves swiftly in this industry.
+======  page 47  ======
+======  page 48  ======
+^G^ SUBMODULE B. Exploring the Most Common HTML Tags
+======  page 49  ======
+======  page 50  ======
+Other Elements
+In addition to the image and anchor elements, HTML also has many other useful elements. Let’s review a few of the common ones.
+Heading elements are tags that provide a way to make heading text stand out from other content text. There are 6 levels within the heading element, and the greater the number, the smaller the font size.
+Example:
+<img src="cid:IMAGE_0.png" />
+For creating lists, there are the unordered () and ordered () elements.
+Example:
+<img src="cid:IMAGE_0.png" />
+For calling the reader’s attention, there are the emphasis and strong tags. Emphasis italicizes the text while strong applies bold to the text.
+Example:
+<img src="cid:IMAGE_0.png" />
+======  page 51  ======
+New HTML5 Semantic Content Sectioning Elements
+In the past, web developers were forced to section their code by using the <div> </div> and <span> </span> elements, and then providing a class name so they could be selected with CSS. Now HTML5 has created Semantic Content Elements that come pre-named for easy use. It also serves to assist with search engines and screen readers.
+<img src="cid:IMAGE_0.png" />
+HTML5 includes elements for displaying video and playing audio content. This tutorial series has used the HTML5 video element frequently.
+Example:
+<img src="cid:IMAGE_0.png" />
+There are so many useful elements and tags that can be leveraged in HTML5. We encourage you to read more about them.
+======  page 52  ======
+======  page 53  ======
+^G^ SUBMODULE C. Implementing Essential HTML Elements
+======  page 54  ======
+======  page 55  ======
+<Template-blank>
+Relative vs. Absolute Paths
+In HTML and CSS the path of any given resource may be specified as either its absolute or relative path.
+As a very simple example to demonstrate the use of relative paths, suppose you have a website called ilovejavascript.com, and your server has the folder structure shown below:
+<img src="cid:IMAGE_0.jpg" />
+Folder 1 has a sub-folder, Folder 2, which has a sub-folder, Folder 3. If you were coding index.html, which is in Folder 2, and you needed to reference styleSheet.css in the link tag, you would use the following code:
+<link href="../Folder 1/styleSheet.css" rel="stylesheet">
+The “../” notation is an instruction to go up one level in the folder structure. To request the scripts.js file in a scripts tag, you would use the following code:
+<script src = “./Folder 3/scripts.js”></ script>
+This is an instruction to start in the current folder (“./”), then go to Folder 3, then retrieve the file called scripts.js.
+As another example, if you were linking to about.html using an anchor tag, you would use the following code:
+<a href = “./about.html”>About</ a>
+This instruction can be read as “start in current folder (./) then retrieve about.html.” So, relative paths refer to files using the folder structure between the file that is making the reference or request and the file that is being referenced or requested. Relative paths do not include any URLs.
+If you were using an absolute path instead, you would use its URL to locate it. For example, you could use the following code to reference the scripts.js file from Folder 2/index.html:
+<script src = “https://ilovejavascript.com/{Folder_3}/scripts.js”></ script>
+Folder 3 is in brackets to highlight an important point — since you’re referencing a resource in another folder and using a URL, the folder name has to comply with a valid URL name. Unfortunately, since URLs cannot have spaces in them, “Folder 3” would make the URL invalid. The obvious workaround is to use an underscore; Folder_3.
+======  page 56  ======
+Knowledge Check
+^^True or false? Using the new semantic HTML5 tags, developers may section code with more descriptive tag names without having to use classes or IDs.
+##True CORRECT
+##False
+======  MODULE 2  ======
+======  page 57  ======
+$$$$$$$  MODULE 1  $$$$$$$
+======  page 58  ======
+^G^ MODULE 5.  Creating a Basic Website
+^G^ Learning objectives:
+%%^G^ Link HTML pages together
+%%^G^ Produce a functioning website
+======  page 59  ======
+SUBMODULE A. Create Multiple HTML Pages
+^G^ <Template-blank>
+======  page 60  ======
+Watch this video in full:
+VIDEO~~Using the Anchor Element~~https://ttamediaservices-uswe.streaming.media.azure.net/076043ea-8692-4319-9ce0-50f631982b75/Basic%20HTML_CSS_Series_Anchor%20tag.mp4
+======  page 61  ======
+Knowledge Check
+True or false? A div tag cannot be wrapped by an anchor tag.
+False
+======  page 62  ======
+======  page 63  ======
+^G^ SUBMODULE B. Linking HTML Pages
+======  page 64  ======
+======  page 65  ======
+Watch this video in full:
+VIDEO~~Using the Image Element~~https://ttamediaservices-uswe.streaming.media.azure.net/abb2476a-83d6-4b77-8b2b-4c9c1fdb7d09/Basic%20HTML_CSS%20Series_IMG%20tag.mp4
+======  page 66  ======
+Knowledge Check
+^^Assuming the links and paths are correct, which of the following pieces of code will fail to display properly?
+##<img src="cellphone.jpg" alt="Image of cell-phone">
+##<img url="https://via.placeholder.com/150/0000FF" alt="Placeholder"> CORRECT
+##<img src="https://via.placeholder.com/150/0000FF" alt="Placeholder">
+##<img src="https://via.placeholder.com/150/0000FF" alt="Placeholder" style=”border: 1px solid black”>
+======  page 67  ======
+Watch this video in full:
+VIDEO~~How to Link Our HTML Pages Together Part 1~~https://ttamediaservices-uswe.streaming.media.azure.net/d0ca85ea-8ea3-4700-8627-8a7ffa3254c1/linkingHTML_pt1.mp4
+======  page 68  ======
+Knowledge Check
+^^Which of the following will yield a result that is different from the other two?
+##<img src="cid:IMAGE_0.png" />
+##<img src="cid:IMAGE_0.png" />
+##<img src="cid:IMAGE_0.png" />
+##All will have the same result. CORRECT
+======  page 69  ======
+======  page 70  ======
+^G^ SUBMODULE C. A Preview of Cascading Style Sheets (CSS)
+======  page 71  ======
+======  page 72  ======
+Watch this video in full:
+VIDEO~~How to Link Our HTML Pages Together Part 2~~https://ttamediaservices-uswe.streaming.media.azure.net/d4ed0419-a7af-4c3a-8cae-55e3c3afacce/linkingHTML_pt2.mp4
+======  page 73  ======
+Knowledge Check
+^^True or false? Specifying a background color for the body element will result in all elements nested inside it to also have the same property, even if the inside elements specify a different background color.
+##False CORRECT
+##True
+======  page 74  ======
+Watch this video in full:
+VIDEO~~How to Link Our HTML Pages Together Part 3~~https://ttamediaservices-uswe.streaming.media.azure.net/62ca9237-893a-45b9-9f5f-630283712097/linkingHTML_pt3.mp4
+======  page 75  ======
+Knowledge Check
+^^The goal is to set the font color of all text in the div with class name “container” to red. Which of the following CSS codes is incorrect?
+##None of the above. They are all correct. CORRECT
+##<img src="cid:IMAGE_0.png" />
+##<img src="cid:IMAGE_0.png" />
+##<img src="cid:IMAGE_0.png" />
+======  page 76  ======
+Planning and Executing a Web Application
+As covered earlier in your training, it’s important to take the time to organize your thoughts and decide on the important elements of your project before starting to code.
+Earlier we mentioned that to visualize logical workflows, you should use a flowchart. However, for web pages a different tool can be used. Web pages aren’t technically computer programs — they are instead precisely formatted electronic documents that are meant to be consumed (utilized) by an actual computer program: the web browser.
+Essentially, a website is a collection of interlinked electronic documents. In creating a website, your planning should include two major elements:
+~~The overall structure of the collection — that is, which pages connect to other pages; and
+~~The graphical layout of each page
+A common tool used to present these elements is a “website wireframe.” This is a visual guide that represents the skeletal form of a website, including page layout, navigation inside and between pages, etc.
+There are many tools available for creating website wireframes. To begin, though, simple pencil and paper or typing it out should suffice. Later, you can try some other tools to see what works best for you. You can find these online by searching “website wireframe tool” or similar.
+The point is: know what you’re intending to do before taking action. As the saying goes, “Weeks of coding can save you hours of planning.”
+In the next assignment you’ll be coding a website yourself. You will be given basic guidance on how to plan and build the site. Some of the site will require you to come up with your own ideas, and some of it will be dictated for you so the site can be used in later drills in the CSS portion of this course and in the JavaScript course.
+Later in your program you will create a portfolio website to display your work as a developer, so for this assignment, do not spend an excessive amount of time on the project. Work as quickly as you can and don’t get caught up in too many details; this is not the website you’ll be using as a developer.
+======  page 77  ======
+One-Page Site
+In the interest of keeping this HTML assignment short, you will create a one-page website – a homepage with a form for user input that presents an “account creation” page. Later, you will add functionality to this page as part of your training in JavaScript.
+The purpose of this assignment is:
+1)     To learn to plan a basic coding project.
+2)     To gain further experience in writing HTML code.
+Background For The Project
+You are a web developer and you have been given the following rough requirements for the design of a web page:
+The page is intended to be an “Account Creation” page for a site that lets people view photos.
+The page you create should have some content that describes the site, and should have a form that allows a user to enter in data needed to create an account for them.
+The minimum data the user will need to enter in order to create an account is:
+^^First and Last name
+^^Email address
+^^Preference for the type of photos they like to see. The available types are:
+##Space photos
+##Sports photos
+##Wildlife photos
+##Plant photos
+This means that your form must contain inputs for this data. You can include other inputs if you wish, but you have to allow for this data at a minimum.
+======  page 78  ======
+Assignment
+Create a sketch of your page. It should include, at a minimum, these elements:
+^^General page info
+^^The account creation form
+^^A footer
+You can have other elements to the page if you wish; it must have these elements, however.
+During your planning of this page, try to account for using the following HTML tags. If you don’t understand any of the following tags, research them online:
+a.      <h> tag
+b.      <p> tag
+c.      <em> tag
+d.      <a> tag
+e.       tag
+f.        tag
+g.       tag
+h.      <div> tag
+i.       <img> tag
+j.       <hr> tag
+k.      <blockquote> tag
+m.     <meta> tag
+n.      <input> tag
+Send a photo of your sketch to your Instructor.
+======  page 79  ======
+Assignment (Continued)
+Following your plan, create a basic one-page HTML website that includes the data and form from the first part of the assignment, and which makes use of the HTML tags mentioned in the first part of the assignment (at a minimum; you will of course have other tags).
+IMPORTANT NOTE: Keep all of your files and code because you will be enhancing your site with CSS and JavaScript later on in the program.
+Push the HTML code from your website to your GitHub account and send the GitHub link containing all your HTML code to your Instructor.
+86. <Final Exam>
+Final Exam
+^^     Assuming the links and paths are correct, which of the following pieces of code will fail to display properly?
+##   <img url="https://via.placeholder.com/150/0000FF" alt="Placeholder">
+CORRECT
+##<img src="cellphone.jpg" alt="Image
+of cell-phone">
+##<img src="https://via.placeholder.com/150/0000FF" alt="Placeholder">
+##<img src="https://via.placeholder.com/150/0000FF" alt="Placeholder" style=”border: 1px solid black”>
+^^True or false? Specifying a background color for the body element will result in all elements nested inside it to also have the same property, even if the inside elements specify a different background color.
+##False CORRECT
+##True
+^^An unordered list, or a  element, is employed to randomize a list each time the page is loaded. True or false?
+##False CORRECT
+##True
+^^All divs, by default, are inline elements unless otherwise specified in the display property. True or false?
+##False CORRECT
+##True
+^^  In HTML5, the built-in nav and footer tags can be used to replace div tags with class names “wrap” and “footer.” True or false?
+##True CORRECT
+##False
+^^In form elements, what does the action attribute defines?
+##The HTTP request type or action verb
+##The server-side script that will handle the form input CORRECT
+##A description of the form that is only visible to developers
+##All of the above
+^^Two spaces (keystrokes of the spacebar) are equivalent to “&nbsp;&nbsp;” in the HTML document. True or false?
+##False CORRECT
+##True
+^^Implementing a font stack allows the end-user to select a font family from the stack. True
+or false?
+##False CORRECT
+##True
+^^   It is considered best practice to use HTML as much as possible to style a web page; CSS should be used sparingly.  True or false?
+##False CORRECT
+##True
+^^  What does AJAX stand for?
+##Asynchronous JavaScript and XML CORRECT
+##Asynchronous jQuery and XNOR gate
+##Action JavaScript Auxiliary
+##Auxiliary jQuery And XOR gate
+^^  What does XHR stand for?
+## XML Http Request CORRECT
+##XHTML Https Reset
+##XML HTML Recertification
+##XHTML Htm Readjustment
+^^  What does DOM stand for?
+##Delimiting Oscillation Modal
+##Document Object Model CORRECT
+##Documentation Operating Metadata
+##Distinguishing Orientation Marker
+^^  Which one of the following encoding systems is the most-utilized
+in HTML documents?
+##UTF-16
+##ASCII
+##UTF-8 CORRECT
+##JPEG
+^^  True or false? An encoding system is a standardized digital instruction set or mapping, from an input signal to a machine readable form.
+##True CORRECT
+##False
+^^  Which one of the following is an element?
+##<p>This is a paragraph.</p> CORRECT
+##<p>
+##</p>
+##This is a paragraph.
+^^ Which of the following is the correct definition for “script” in HTML?
+##A script is a separate program/collection of code than the HTML document you are writing. CORRECT
+##A script is a series of code that interacts with the user through other programs.
+##A script is a long written document consisting of a story, usually with dialogue and separate scenes.
+##A script is a separate program that utilizes the background data of HTML to write code for your website.
+^^Which of the following statements is correct?
+##All of the above are true CORRECT
+##The CSS file does not have to be located in the same directory as the HTML file
+##Notepad++ is an IDE
+##There can only be one body element — otherwise the page will not load and display properly
+^^Which of the following statements is/are correct?
+## All of the above are correct CORRECT
+##An anchor tag may be used to link to a sub-section within the same HTML document
+##An anchor tag may be given a class or ID for CSS targeting
+##An  anchor tag may be used to link to an HTML file or other resource located on a different server
+^^Which of the following software may be used to compose HTML code?
+##All of the above CORRECT
+##Visual Studio Code
+##Notepad++
+##Windows Notepad
+^^True or false? A div tag cannot be wrapped by an anchor tag.
+##False CORRECT
+##True
