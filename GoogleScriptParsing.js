@@ -184,7 +184,7 @@ function processItem(itemCurr, itemPrev, listCounters, images, output, pageBrkID
         
         // FIND PAGE BREAKS
         if (itemIdCurr === pageBrkID) {
-            return pageFlag;
+            return pageFlag + itemText;
         }
         // [1.1] FIRST.FIRST ITEM
         //if ( counter == 0 ) {
