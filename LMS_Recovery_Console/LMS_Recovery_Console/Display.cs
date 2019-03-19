@@ -47,8 +47,7 @@ namespace LMS_Recovery_Console
         //  Displays Console: Full List
         public static void ToConsole(List<string> _targetList)
         {
-            foreach (var line in _targetList)
-                Console.WriteLine(line);
+            foreach (var line in _targetList) Console.WriteLine(line);
         }
         public static void ToConsole(List<int> _targetList)
         {
@@ -313,7 +312,7 @@ namespace LMS_Recovery_Console
         public static void ExportCollection(List<List<string>> _parsedCollection, string docName)
         {
             int pageCount = 0;
-            using (StreamWriter resultFile = new StreamWriter(@"C:\Users\gates\Documents\GatesKennedy\LMS_Recovery_Console\Results\" + docName + ".txt", false))
+            using (StreamWriter resultFile = new StreamWriter(@"C:\Programming\GK_ASP-NET\LMS_Recovery_Console\Results\" + docName + ".txt", false))
 
                 foreach (var page in _parsedCollection)
                 {

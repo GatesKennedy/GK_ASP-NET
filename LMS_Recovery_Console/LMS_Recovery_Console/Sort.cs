@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace LMS_Recovery_Console
@@ -19,8 +20,9 @@ namespace LMS_Recovery_Console
         public List<List<List<string>>>     ModuleList { get; set; }
         public List<List<StringBuilder>>    CompiledPages { get; set; }
         public List<List<StringBuilder>>    SortedPages { get; set; }
+        public List<List<Tuple<string, string>>> IdentfiedPages { get; set; }
         public List<List<string>>           FormattedList { get; set; }
-
+    
         List<string> FlagList = new List<string>()
         {
             "$$$","!!!","^GREEN^","***","^^^","###"
@@ -159,20 +161,6 @@ namespace LMS_Recovery_Console
 
                     Console.WriteLine("NEW PAGE: "+PageCount);
                 }
-                //  if SUBMODULE
-                else if (line.Contains("SUBMODULE ") && !IsolatedList[i+1].Contains("^G^"))
-                {
-                    // Add Current Page to PageList / Restart
-                    PageCount++;
-                    PageList.Add(tempPage);
-                    tempPage = new List<string>() {line};
-                    Console.WriteLine("NEW SUBMODULE: Page" + PageCount);
-                    // Add SUBMODULE to PageList / Restart
-                    PageCount++;
-                    PageList.Add(tempPage);
-                    tempPage = new List<string>();
-                    Console.WriteLine("NEW PAGE: " + PageCount);
-                }
                 //  Green Changed
                 else if (wasGreen && !nowGreen)
                 {
@@ -199,6 +187,14 @@ namespace LMS_Recovery_Console
 
         }
 
+        //  Identify Pages
+        public void IdentifyPages()
+        {
+            foreach (var page in PageList)
+            {
+                
+            }
+        }
         // Separate Modules
         public void SeparateModules()
         {
@@ -245,11 +241,6 @@ namespace LMS_Recovery_Console
                 var pageLine = HandlePageTypes(page, cntKC);
                 tempPageList.Add(pageLine);
                 Console.WriteLine("KC count: " + this.cntKC);
-
-                //foreach (var line in pageLine)
-                //{
-                //    Console.WriteLine(line.Substring(0,10));
-                //}
             }
             this.PageList = tempPageList;
         }
@@ -261,46 +252,58 @@ namespace LMS_Recovery_Console
         {
             var tempPage = new List<string>();
             bool isMatch = false;
+            bool userCheck = false;
 
             //  IDENTIFY Page Type
             //  LOOP thr Lines of page
             for (int j = 0; j < _readPage.Count; j++)
             {
-                var line = _readPage[j];
+                userCheck = false;
+                while (!userCheck)
+                {
+                    var line = _readPage[j];
 
-                //  VIDEO
-                if (line.StartsWith("VIDEO~~"))
-                {
-                    tempPage = HandleVideo(_readPage);
-                    isMatch = true;
-                }
-                //  QUESTION
-                else if (line.StartsWith("^^"))
-                {
-                    bool noTitle = true;
-                    //  Handle Tests Fxn
-                    tempPage = HandleTests(_readPage, cntKC);
-                    isMatch = true;
-                    break;
-                }
-                //  GREEN
-                else if (line.StartsWith("^G^"))
-                {
-                    //if (!line.ToUpper().Contains("SUBMODULE") && line.ToUpper().Contains("MODULE")) cntKC = 0;
+                    //  VIDEO
+                    if (line.ToLower().StartsWith("VIDEO"))
+                    {
+                        tempPage = HandleVideo(_readPage);
+                        isMatch = true;
+                    }
+                    //  QUESTION
+                    else if (line.ToLower().StartsWith("knowledge"))
+                    {
+                        bool noTitle = true;
+                        //  Handle Tests Fxn
+                        tempPage = HandleTests(_readPage, cntKC);
+                        isMatch = true;
+                        break;
+                    }
+                    //  GREEN
+                    else if (line.StartsWith("^G^") && line.Contains("MODULE"))
+                    {
+                        tempPage = HandleGreen(_readPage, cntKC);
+                        isMatch = true;
+                    }
+                    //  DRILL
+                    else if (line.ToLower().Trim() == "assignment")
+                    {
+                        tempPage = HandleDrill(_readPage);
+                        isMatch = true;
+                    }
 
-                    tempPage = HandleGreen(_readPage, cntKC);
-                    isMatch = true;
-                }
-                //  DRILL
-                else if (line.ToLower().Trim() == "assignment")
-                {
-                    tempPage = HandleDrill(_readPage);
-                    isMatch = true;
-                }
-                //  LESSON
-                else if (!isMatch)
-                {
-                    tempPage = HandleLesson(_readPage);
+                    //  LESSON
+                    if (!isMatch)
+                    {
+                        tempPage = HandleLesson(_readPage);
+                    }
+                    Console.WriteLine("np==========================================");
+                    Display.ToConsole(tempPage);
+                    string input = Console.ReadKey().Key.ToString();
+                    if (input == "F")
+                    {
+                        userCheck = true;
+                        break;
+                    }
                 }
             }
             return tempPage;
